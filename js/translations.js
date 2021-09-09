@@ -11,7 +11,7 @@ $.extend( $.i18n.parser.emitter, {
 	kw: function (nodes) {
 		var template = '<div class=\'tooltip keyword_tooltip\'><div class=\'tooltip-arrow\'></div><div class=\'tooltip-inner\'></div></div>';
 		var tooltip = '<b>' + $.i18n('keyword-' + nodes[0].toLowerCase() + '-name', 1) + '</b>: ' + $.i18n('keyword-' + nodes[0].toLowerCase());
-		return '<span class="keyword" data-toggle="tooltip" data-bs-html="true" data-bs-template="' + template + '" title="' + tooltip + '">' + $.i18n('keyword-' + nodes[0].toLowerCase() + '-name', nodes[1]) + '</span>';
+		return '<span class="keyword" data-toggle="tooltip" data-bs-html="true" data-bs-template="' + template + '" title="' + tooltip + '">' + $.i18n('keyword-' + nodes[0].toLowerCase() + '-name', nodes[1] || 1) + '</span>';
 	},
 	ability: function (nodes) {
 		var ability = char_data.abilities[nodes[0]];
