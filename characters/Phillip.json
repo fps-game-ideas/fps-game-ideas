@@ -1,0 +1,121 @@
+{
+    "name": "Phillip",
+    "role": "flank",
+    "health": 1900,
+    "speed": 400,
+    "bio": "! This is someone else's character !\nThey asked me to make a kit for them.\n\nShort Lore:\n\tSon of a president whose family somehow is always years ahead in technology than the rest of the world.\n\tFrom little they tried brainwashing him to be the next president, but with little effect due to his infatuantion with videogames.\n\tOne day, they were attacked by robots.\n\tPhillip fought bravely until his laft fue, for he ran out of ammo.\n\tPhillip's body was shot multiple times by the misterious robot.\n\tWhen Phillip regains conciousnous, robotic arms perform operations on him as his parents instructed the doctor to conduct a surgery where his damaged body parts would be replaced with android parts to stabilize his condition.\n\nPersonality: \n\t- Calm and patient with a side of sadism\n\t- He avoids unnecessary killing due to his family's reputation, but he clearly enjoys it.\n\t- At first he tries to hide it, but when he's REALLY in the heat of battle, he will definitely show he enjoys it (IDEA: Change his animations based on his killstreak/multi kill.)\n\t- Basically the \"Damn you! You are making this fun!\" anime cliche.",
+    "abilities": [{
+            "name": "Bytes",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/buck-wild.jpg",
+            "cooldown": 0,
+            "bind": "passive",
+            "description": "Phillip's veins are filled with this blue, hyperintelligent species instead of his blood, granting him a buff depending on the situation. Only one buff at a time. He must stay at least 4 seconds with a passive before being able to switch (unless an ability or card forces him to be in a specific passive state.)\nThese passives can be the following (priority descending): {{ABILITY:6}}, {{ABILITY:7}}, {{ABILITY:8}}, {{ABILITY:9}}\n",
+            "hidden": false,
+            "stances": [],
+            "details": ""
+        }, {
+            "name": "Dual Pistols",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/magnums.jpg",
+            "cooldown": 0,
+            "bind": "primary",
+            "description": "A pair of Colt 1911 pistols, one in each hand, firing once every 0.7 seconds, dealing 600 damage per shot.",
+            "hidden": false,
+            "stances": [],
+            "details": "- Has an ammo count of 14 (real life data, 2x7 bullets) and a reload speed of 3 seconds.\n- He could have much more futuristic weaponry, but he enjoys the classic feeling of this gun."
+        }, {
+            "name": "Imperiling Punch",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/defiance.jpg",
+            "cooldown": 4,
+            "bind": "secondary",
+            "description": "Punch an enemy in front of you for 400 damage, dealing slight knockback, Disarming them for 0.6 second and Silencing them for 1.5 seconds.",
+            "hidden": false,
+            "stances": [],
+            "details": "- Cannot use another ability for the duration.\n- Not cancelable."
+        }, {
+            "name": "Agility",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/agility.jpg",
+            "cooldown": 8,
+            "bind": "ability1",
+            "description": "Enhance your mobility for 5 seconds, locking your passive to be {{ABILITY:9}} for the duration, gaining +20 {{KW:Speed}} and having the ability to wall climb by holding Jump while next to a wall. The speed at which you wall climb depends on the amount of {{KW:Speed}} you have (can be slower if enemies inflict a {{KW:Slow}} effect on you).",
+            "hidden": false,
+            "stances": [],
+            "details": ""
+        }, {
+            "name": "Partial Block",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/battle-shout.jpg",
+            "cooldown": 10,
+            "bind": "ability2",
+            "description": "Bring your arms in front of you, locking your passive to be {{ABILITY:7}} for 3 seconds. For this duration, you have +15 {{KW:Armor}} and an additional +30 frontal {{KW:Armor}}. Also regenerate 40 Health every 0.1 seconds if you've been shot in the last 1.5 seconds.",
+            "hidden": false,
+            "stances": [],
+            "details": ""
+        }, {
+            "name": "Locked On",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/cyclone-strike.jpg",
+            "cooldown": 0,
+            "bind": "ultimate",
+            "description": "Select an enemy player in front of you. For the next 5 seconds that enemy will be {{KW:Reveal|2}} to you, they will receive 20% more damage from your {{ABILITY:1}}, will deal 30% less damage to you and they will be {{KW:Cripple|2}} for the duration, but you cannot use {{ABILITY:3}} or {{ABILITY:4}} while the ability is active. If your victim dies while this ultimate is active, you gain 30% Ultimate Charge.",
+            "hidden": false,
+            "stances": [],
+            "details": "- Cannot be canceled.\n- Ultimate Shout: \"Not on my watch!\" (Enemy/Self) \"This one is mine!\" (Ally)"
+        }, {
+            "name": "Anti-Tranqualizer",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/setback.jpg",
+            "cooldown": 0,
+            "bind": "passive",
+            "description": "You have +15 {{KW:Resilience}}. This activates when hit by hard CC, aka {{KW:Stun}}, {{KW:Silence}}, etc. Will not take effect with {{KW:Exile}} or {{KW:Metamorphosis}} unless it is already active beforehand.",
+            "hidden": true,
+            "stances": [],
+            "details": ""
+        }, {
+            "name": "Skin Shield",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/deflector-shield.jpg",
+            "cooldown": 0,
+            "bind": "passive",
+            "description": "You have +10 {{KW:Armor}}. This activates when you've been shot in the last 1.5 seconds.",
+            "hidden": true,
+            "stances": [],
+            "details": ""
+        }, {
+            "name": "Rejuvenation",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/astral-mark.jpg",
+            "cooldown": 0,
+            "bind": "passive",
+            "description": "Heal 20 health every 0.1 seconds. This activates when you're not on Maximum Health.",
+            "hidden": true,
+            "stances": [],
+            "details": ""
+        }, {
+            "name": "Nimble",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/prowl.jpg",
+            "cooldown": 0,
+            "bind": "passive",
+            "description": "You have +20 {{KW:Speed}}.",
+            "hidden": true,
+            "stances": [],
+            "details": ""
+        }
+    ],
+    "talents": [{
+            "name": "Robotic Force",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-legendaries-badge/defiant-fist.png",
+            "cooldown": 0,
+            "description": "{{ABILITY:2}} now executes targets under 35% Health, but its cooldown is increased by 4 seconds.",
+            "details": ""
+        }, {
+            "name": "Containment Breach",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-legendaries-badge/corrosive-acid.png",
+            "cooldown": 0,
+            "description": "Upon dying, the {{ABILITY:0}} in Phillip's veins will flow out, forming a small puddle that constantly moves towards the nearest enemy. Upon collision with an enemy the bytes enter the enemy's body and they will receive +40 {{KW:Slow}}, and will take 300 Damage every second for 4 seconds. The puddle will last for up to 6 seconds before drying up.",
+            "details": ""
+        }, {
+            "name": "Her Gift",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-legendaries-badge/yomi.png",
+            "cooldown": 0,
+            "description": "{{ABILITY:4}} will prevent all incoming damage from the front and set its base cooldown to 7 seconds.",
+            "details": ""
+        }
+    ],
+    "stances": [""],
+    "card_categories": []
+}
