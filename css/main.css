@@ -1,0 +1,308 @@
+
+html {
+	height: 100%;
+	min-height: 100%;
+}
+
+body {
+	/*background-color: #0E222B!important;
+	color: white!important;*/
+	height: 100%;
+	min-height: 100%;
+	padding-top: 40px;
+	padding-bottom: 60px;
+}
+
+.Page {
+	height: 100%;
+}
+
+.hidden {
+	display: none!important;
+}
+
+.mainContent {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: .5rem;
+	border-radius: .5rem;
+	min-height: 100%;
+}
+
+.ability {
+	position: relative;
+	width: 100%;
+	max-width: 800px;
+	min-width: 500px;
+	margin: 15px;
+	padding: 10px;
+	background-color: #0E222B;
+	display: flex;
+}
+
+.ability_rest_container > div {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.ability_rest_container {
+	margin-left: 15px;
+}
+
+.ability_stances {
+	width: 100%;
+}
+
+.ability_cooldown {
+	text-align: center;
+	font-size: 1.4em;
+}
+
+.ability_image {
+	width: 150px;
+	height: 150px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.ability_bind {
+	position: absolute;
+	top: 5px;
+	right: 15px;
+	font-size: 1.2em;
+}
+
+.ability_details_show_hide {
+	font-weight: 700;
+	cursor: pointer;
+}
+
+input.ability_name {
+	/*width: 300px;*/
+}
+
+input.short_input {
+	width: 140px;
+	display: inline-block;
+}
+
+.full_width_textarea {
+	max-width: 100%;
+	width: 100%;
+	min-width: 100%;
+	height: 120px;
+}
+
+
+.talent {
+	position: relative;
+	width: 100%;
+	max-width: 800px;
+	min-width: 500px;
+	margin: 15px;
+	padding: 10px;
+	background-color: #0E222B;
+	display: flex;
+}
+
+.talent_image {
+	width: 150px;
+	height: 150px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.talent_rest_container {
+	margin-left: 15px;
+}
+
+.talent_rest_container > div {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.nav_container {
+	position: fixed;
+	overflow:hidden;
+	border-radius: .25rem;
+	bottom: 0px;
+	left: 0px;
+}
+
+.btn_nav {
+	padding: .375rem .75rem;
+	text-align: center;
+	cursor: pointer;
+}
+
+.form-select {
+	
+}
+
+#image_selector_body img {
+	margin: 5px;
+	height: 150px;
+}
+
+#image_selector_modal .modal-content {
+	background-color: #0E222B!important;
+}
+
+.ultimate_image {
+	clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.card_category {
+	background-color: #0E222B;
+	margin: 15px;
+}
+
+.card_category_header {
+	width: 100%;
+	height: 3em;
+	display: flex;
+}
+
+.card_category_image {
+	height: 3em;
+	width: 3em;
+	min-width: 3em;
+	margin-right: 0.5em;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.card_category_name {
+	font-size: 2em;
+	vertical-align: middle;
+}
+
+.card_category_cards {
+	display: flex;
+}
+
+.game_card {
+	position: relative;
+	display: inline-block;
+	width: 260px;
+	background-color: #0E3940;
+	margin: 5px auto;
+	border: 2px solid white;
+}
+
+.game_card .card_image {
+	width: 256px;
+	height: 196px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+
+.game_card .card_name {
+	width: 100%;
+	text-align: center;
+	padding: 5px;
+	font-size: 1.2em;
+	border-bottom: 2px solid white;
+}
+
+.game_card .card_cost_level {
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 1.1em;
+}
+
+.game_card .card_cost_level div {
+	
+}
+
+.game_card .card_description_container {
+	text-align: center;
+	display: flex;
+	width: 100%;
+	height: 150px;
+	max-height: 150px;
+	border-bottom: 2px solid white;
+	border-top: 2px solid white;
+}
+
+.game_card .card_description_container .card_description {
+	margin: auto;
+	padding: 3px;
+}
+
+.game_card .card_cost {
+	text-align: left;
+	border-right: 1px solid white;
+}
+
+.game_card .card_cooldown {
+	text-align: center;
+	border-right: 1px solid white;
+	border-left: 1px solid white;
+}
+
+.game_card .card_level {
+	text-align: right;
+	border-left: 1px solid white;
+}
+
+.max_level {
+	color: #32D119;
+}
+
+.keyword {
+	font-weight: bold;
+	cursor: pointer;
+}
+
+#card_level_select {
+	display: flex;
+}
+
+#card_level_select button {
+	margin: auto;
+}
+
+.note {
+	color: #BBBBBB;
+	position: absolute;
+	bottom: 5px;
+	left: 0px;
+	padding: 5px 10px;
+}
+
+.keyword_tooltip .tooltip-inner {
+	/*width: 400px;*/
+	font-size: 1rem;
+	max-width: 400px!important;
+	width: 400px!important;
+}
+
+.ability_tooltip .tooltip-inner {
+	width: 840px;
+	max-width: 840px;
+	text-align: left;
+	font-size: 1rem;
+}
+
+.talent_tooltip .tooltip-inner {
+	width: 840px;
+	max-width: 840px;
+	text-align: left;
+	font-size: 1rem;
+}
+
+.card_tooltip .tooltip-inner {
+	width: 275px;
+	max-width: 275px;
+	text-align: left;
+	font-size: 1rem;
+}
+
+.ability_link, .talent_link, .card_link {
+	color: #1adae8;
+}

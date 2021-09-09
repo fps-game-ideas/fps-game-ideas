@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Character Viewer!</title>
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<script src="js/jquery_i18n/jquery.i18n.js"></script>
+		<script src="js/jquery_i18n/jquery.i18n.emitter.bidi.js"></script>
+		<script src="js/jquery_i18n/jquery.i18n.emitter.js"></script>
+		<script src="js/jquery_i18n/jquery.i18n.fallbacks.js"></script>
+		<script src="js/jquery_i18n/jquery.i18n.language.js"></script>
+		<script src="js/jquery_i18n/jquery.i18n.messagestore.js"></script>
+		<script src="js/jquery_i18n/jquery.i18n.parser.js"></script>
+		
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap/bootstrap.min.js"></script>
+		<script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+		<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap/bootstrap-grid.min.css">
+		<link rel="stylesheet" href="css/bootstrap/bootstrap-reboot.min.css">
+		<link rel="stylesheet" href="css/bootstrap/bootstrap-utilities.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="css/bootstrap-icons.css">
+	</head>
+	
+	<body class="bg-dark text-light">
+		<div class="mainContent container-xl" id="characterSelection">
+			<div id="characterList"></div>
+				<div class="note">NOTE: Most images on this site are from <a href="https://paladins.com/">Paladins: Champions of the Realm</a>. My intention with this site is not copying or stealing, but to temporarily show some concepts for a similar game I have been dreaming of making. This site is non-profit.</div>
+		</div>
+		<div class="mainContent container-xl" id="characterContent">
+			<div id="Bio_Page" class="Page" page_name="Bio">
+				<h1 id="character_name"></h1>
+				<h3 id="character_role"></h3>
+				<h3>Health: <span id="character_heath"></span></h3>
+				<h3>Speed: <span id="character_speed"></span></h3>
+				<br>
+				<p>Bio, Lore and/or other info: </p>
+				<p id="character_bio"></p>
+			</div>
+			<div id="Ability_Page" class="Page" page_name="Abilities">
+				<select id="stance_select" class="form-select bg-dark text-light" onchange="RefreshAbilitiesPage(this.value)"></select>
+				<div class="ability hidden">
+					<div class="ability_icon_container">
+						<div class="ability_image"></div>
+						<div class="ability_cooldown"></div>
+					</div>
+					<div class="ability_rest_container">
+						<h4 class="ability_name"></h4>
+						<div class="ability_bind"></div>
+						<div class="ability_description"></div>
+						<div class="ability_details_label">Details: <span class="ability_details_show_hide" onclick="ToggleDetails(this)">Show/Hide</span></div>
+						<div class="ability_details details hidden"></div>
+					</div>
+				</div>
+			</div>
+			<div id="Talents_Page" class="Page" page_name="Talents">
+				<div class="talent hidden">
+					<div class="talent_icon_container">
+						<div class="talent_image"></div>
+						<div class="talent_cooldown"></div>
+					</div>
+					<div class="talent_rest_container">
+						<h4 class="talent_name"></h4>
+						<div class="talent_description"></div>
+						<div class="talent_details_label">Details: <span class="ability_details_show_hide" onclick="ToggleDetails(this)">Show/Hide</span></div>
+						<div class="talent_details details hidden"></div>
+					</div>
+				</div>
+			</div>
+			<div id="Cards_Page" class="Page" page_name="Cards">
+				<!-- <div id="card_level_select"></div> -->
+				<select id="card_level_select" class="form-select bg-dark text-light" onchange="RefreshCardsPage(this.value)"></select>
+				<div class="card_category hidden">
+					<div class="card_category_header">
+						<div class="card_category_image"></div>
+						<div type="text" class="card_category_name"></div>
+					</div>
+					<div class="card_category_cards"></div>
+				</div>
+				<div class="game_card hidden">
+					<div class="card_name"></div>
+					<div class="card_image"></div>
+					<div class="card_description_container"><div class="card_description"></div></div>
+					<div class="card_cost_level row">
+						<div class="card_cost col"></div>
+						<div class="card_cooldown col"></div>
+						<div class="card_level col"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div style="height: 60px;"></div>
+		
+		<script src="js/translations.js"></script>
+		<script src="js/character_select.js"></script>
+		<script src="js/view_character.js"></script>
+		<script src="js/page_manager.js"></script>
+	</body>
+</html>
