@@ -1,0 +1,94 @@
+{
+    "name": "Simo Yusi",
+    "role": "healer",
+    "health": 2300,
+    "speed": 370,
+    "bio": "Once a happy and accomplished person, who just happened to really like crossdressing.\nHe also had a boyfriend, and the two of them grew closer each day . . .\nUntil one day the country they lived in suddenly took a homophobic turn in politics and seeked to hunt down anyone with even a shred of homosexuality.\nHis boyfriend just quickly found himself a girlfriend and called it a day, but unfortunately, our hero didn't have such a luxury due to footage of him crossdressing already being circulated on the internet.\nHe decided to make a run for to the nearest border. It was a war zone, but it was his best chance at survival.\n\nHe barely made it. He was alone and scared . . .\nAfter that, he was found by the Edgelords, who took him in because they were lacking a healer at the time.\nHowever, their alliance was short-lived due to him refusing to use his Ultimate on a critical mission, saying he doesn't have one, but his colleges said they could feel he had one.\nNow, he is not a part of any guild, trying to survive on his own with a more pacifistic approach than most.",
+    "abilities": [{
+            "name": "Not Special",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/setback.jpg",
+            "cooldown": 0,
+            "bind": "passive",
+            "description": "You do not have an Ultimate Ability, but instead whenever you would gain non-passive Ultimate Charge, decrease all of your active cooldowns by the percentage of Ultimate Charge you would have gained in Percentage Cooldown Reduction.",
+            "hidden": false,
+            "stances": [],
+            "details": ""
+        }, {
+            "name": "Orbs of Heartache",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/sigil.jpg",
+            "cooldown": 0,
+            "bind": "primary",
+            "description": "Shoot an orb from your hand every 0.75 seconds, dealing 450 damage per shot. Consecutive hits on the same enemy (after the first one) Slows them by 10% for 4 seconds per hit, stacking up to 40%. Has no ammo count, nor reload.",
+            "hidden": false,
+            "stances": [],
+            "details": ""
+        }, {
+            "name": "Encouragement",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/mending-spirits.jpg",
+            "cooldown": 6,
+            "bind": "secondary",
+            "description": "Heal an ally for 50 every 0.2 seconds for 5 seconds. If your terget is below 50% Health, increase the healing to 75 per tick, but increase your Active Cooldowns by 20%.",
+            "hidden": false,
+            "stances": [],
+            "details": ""
+        }, {
+            "name": "Tough Skin",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/earthen-guard.jpg",
+            "cooldown": 10,
+            "bind": "ability1",
+            "description": "Become {{KW:Immovable}} and gain 20 {{KW:Armor}} for 3 seconds. Whenever an enemy damages you while this ability is active, they will deal 35% less Weapon Damage for the next 4 seconds. Uncancelable. Cannot use another ability for the duration.",
+            "hidden": false,
+            "stances": [],
+            "details": "- The negative effect does not stack, but gets its duration reset."
+        }, {
+            "name": "Dark Thoughts",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/midnight.jpg",
+            "cooldown": 18,
+            "bind": "ability2",
+            "description": "Give every enemy in a 120 unit radius Gloom for 4 seconds, restricting their visibility to 60 units.",
+            "hidden": false,
+            "stances": [],
+            "details": ""
+        }, {
+            "name": "Jealousy",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/nightfall.jpg",
+            "cooldown": 0,
+            "bind": "passive",
+            "description": "For the next 3 seconds everyone is {{KW:Fixation|2}} on you, and your Primary Fire becomes {{ABILITY:6}}.",
+            "hidden": true,
+            "stances": [],
+            "details": "- The Ultimate Shout is activated with Hidden Potential.\n- This is not normally seen anywhere in the game, except in the Loney boss fight."
+        }, {
+            "name": "Hidden Potential",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/shoulder-bash.jpg",
+            "cooldown": 0,
+            "bind": "primary",
+            "description": "Select an enemy to teleport to, then if that enemy is not affected by the effect of Dark Thoughts deal 1000 Damage to them instantly and knock them back with 2222 Knockback Power. If they are affected by Dark Thoughts, give them an uppercut, dealing 500 Damage to them and sending them upwards, after which teleport up to them and kick them from the side, sending them flying with 2222 Knockback power and dealing 1500 Damage. The Damage and Knockback of this ability is increased by 15% for each different type of negative effects the enemy has actively from you (does not affect the uppercut due to skybox issues).",
+            "hidden": true,
+            "stances": [],
+            "details": "- Ultimate Shout: \"He was supposed to be MINE!\" (angry, yet teary) (enemy/self), \"Get your hands OFF HIM!\" (same tone) (ally)\n- NOTE: Everyone who knows or suspects him having an ult in-lore should say something about that in their kill taunts. (Ex: \"You could have saved us back there with the kind of power you are hiding!\")"
+        }
+    ],
+    "talents": [{
+            "name": "Please Don't Shoot!",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-legendaries-badge/mothers-grace.png",
+            "cooldown": 0,
+            "description": "{{ABILITY:3}} will {{KW:Disarm|1}} enemies who hit you for 3 seconds instead of the less Weapon Damage.",
+            "details": ""
+        }, {
+            "name": "Unachievable Affection",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-legendaries-badge/spreading-influence.png",
+            "cooldown": 0,
+            "description": "Whenever you use {{ABILITY:2}} on an ally who is below 60% Health, its effects bounce onto another ally, healing them for 50% of the healing. The Bonus Healing from {{ABILITY:2}} will not increase your Active Cooldowns, but the target has to be below 30% Health for it to trigger.",
+            "details": ""
+        }, {
+            "name": "Powerless",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-legendaries-badge/agony.png",
+            "cooldown": 0,
+            "description": "{{ABILITY:4}} now also {{KW:Cripple|4}} enemies, but it only lasts 3 seconds now and its effective radius is reduced by 30%.",
+            "details": ""
+        }
+    ],
+    "stances": [""],
+    "card_categories": []
+}
