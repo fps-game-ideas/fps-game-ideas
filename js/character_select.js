@@ -1,5 +1,4 @@
 
-
 function CharacterSelectionScreen() {
 	$(".nav_container").addClass("hidden");
 	$("#characterContent").addClass("hidden");

@@ -52,9 +52,13 @@ body {
 	width: 100%;
 }
 
-.ability_cooldown {
+.ability_cooldown_container {
 	text-align: center;
 	font-size: 1.4em;
+}
+
+.ability_cooldown_container > span {
+	margin: 0.3em;
 }
 
 .ability_image {
@@ -305,4 +309,5 @@ input.short_input {
 
 .ability_link, .talent_link, .card_link {
 	color: #1adae8;
+	cursor: pointer;
 }

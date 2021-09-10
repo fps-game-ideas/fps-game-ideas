@@ -16,6 +16,13 @@ var binds = {
 	ultimate: "Ultimate"
 }
 
+var icons = {
+	cooldown: '<i class="bi bi-clock" title="Cooldown (in seconds)" data-toggle="tooltip"></i>',
+	charges: '<i class="bi bi-lightning-charge" title="Ability Charges" data-toggle="tooltip"></i>',
+	cost: '<i class="bi bi-currency-dollar" title="Card Cost" data-toggle="tooltip"></i>',
+	level: '<i class="bi bi-arrow-up" title="Card Level" data-toggle="tooltip"></i>'
+}
+
 function ViewCharacterPage(char_name) {
 	$("#characterSelection").addClass("hidden");
 	GetCharacterJSON(char_name);
@@ -87,7 +94,10 @@ function DisplayAbility(ability, parent) {
 	var clone = $(".ability.hidden").clone().removeClass("hidden");
 	clone.find(".ability_name").html(ability.name);
 	if (ability.cooldown > 0) {
-		clone.find(".ability_cooldown").html(ability.cooldown + " sec.");
+		clone.find(".ability_cooldown").html(ability.cooldown + " " + icons.cooldown);
+	}
+	if (ability.charges && ability.charges > 1) {
+		clone.find(".ability_charges").html(ability.charges + " " + icons.charges);
 	}
 	clone.find(".ability_bind").html(binds[ability.bind]);
 	clone.find(".ability_description").html($.i18n(ability.description));
@@ -122,7 +132,7 @@ function DisplayTalent(talent, parent) {
 	var clone = $(".talent.hidden").clone().removeClass("hidden");
 	clone.find(".talent_name").html(talent.name);
 	if (talent.cooldown > 0) {
-		clone.find(".talent_cooldown").html(talent.cooldown + " sec.");
+		clone.find(".talent_cooldown").html(talent.cooldown + " " + icons.cooldown);
 	}
 	clone.find(".talent_description").html($.i18n(talent.description));
 	if (talent.details.length > 0) {
@@ -187,16 +197,16 @@ function DisplayCard(card, parent, level) {
 	clone.find(".card_name").html(card.name);
 	clone.find(".card_image").css("background-image", 'url("' + card.image + '")');
 	clone.find(".card_description").html($.i18n(card.description));
-	clone.find(".card_cost").html( (card.cost > 0 ? card.cost*current_card_level : '???') + ' <i class="bi bi-currency-dollar"></i>');
+	clone.find(".card_cost").html( (card.cost > 0 ? card.cost*current_card_level : '???') + ' ' + icons.cost);
 	//console.log(card_level, current_card_level, max_card_level);
 	var displayCooldown = !(card.cooldown === 0);
 	if (displayCooldown) {
-		clone.find(".card_cooldown").html( $.i18n(card.cooldown.toString()) + ' <i class="bi bi-clock"></i>' );
+		clone.find(".card_cooldown").html( $.i18n(card.cooldown.toString()) + ' ' + icons.cooldown);
 	} else {
 		clone.find(".card_cooldown").addClass("hidden");
 	}
 	var spanClass = ((current_card_level >= card.max_level) ? "max_level" : "");
-	clone.find(".card_level").html( '<span class="' + spanClass + '">' + current_card_level + "/" + card.max_level + ' <i class="bi bi-arrow-up"></i></span>' );
+	clone.find(".card_level").html( '<span class="' + spanClass + '">' + current_card_level + "/" + card.max_level + ' ' + icons.level + '</span>' );
 	clone.find('[data-toggle="tooltip"]').tooltip();
 	AddAbilityTooltips(clone);
 	AddTalentTooltips(clone);
