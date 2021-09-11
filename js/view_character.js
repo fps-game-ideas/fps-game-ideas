@@ -25,10 +25,12 @@ var icons = {
 
 function ViewCharacterPage(char_name) {
 	$("#characterSelection").addClass("hidden");
+	$(".note").addClass("hidden");
 	GetCharacterJSON(char_name);
 }
 
 var char_data = {};
+var bio_points = ["origin", "bio", "personality", "appearance", "other_info"];
 
 function GetCharacterJSON(name) {
 	$.get("characters/" + name + ".json", function(data) {
@@ -39,7 +41,15 @@ function GetCharacterJSON(name) {
 		$("#character_role").html(roles[data.role]);
 		$("#character_heath").html(data.health);
 		$("#character_speed").html(data.speed);
-		$("#character_bio").html(data.bio.replaceAll('\n', '<br>'));
+		for (var i=0; i < bio_points.length; i++) {
+			var point = bio_points[i];
+			if (data[point] && data[point].length > 0) {
+				$("#character_" + point).html(data[point].replaceAll('\n', '<br>'));
+			} else {
+				$("#character_" + point + "_header").addClass("hidden");
+			}
+		}
+		
 		
 		if (data.stances.length > 1) {
 			var html = '';
@@ -231,4 +241,8 @@ function AddCardTooltips(clone) {
 
 function ToggleDetails(e) {
 	$(e.parentElement.parentElement.querySelector(".details")).toggleClass("hidden");
+}
+
+function ToggleVisibilityOn(selector) {
+	$(selector).toggleClass("hidden");
 }

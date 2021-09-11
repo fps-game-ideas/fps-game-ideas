@@ -94,7 +94,7 @@ $.i18n().load({
 		"keyword-immovable": "This entity is immune to all Crowd Control effects.",
 		"keyword-speed-name": "Speed", // Movement Speed buff
 		"keyword-speed": "This entity's Movement Speed is increased by x%.",
-		"keyword-slow-name": "Slow",
+		"keyword-slow-name": "{{NTH:$1|Slow|Slowed|Slowing|Slows}}",
 		"keyword-slow": "This entity's Movement Speed is reduced by x%."
 	}
 })

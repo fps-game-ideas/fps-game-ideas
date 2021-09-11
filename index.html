@@ -27,7 +27,6 @@
 	<body class="bg-dark text-light">
 		<div class="mainContent container-xl" id="characterSelection">
 			<div id="characterList"></div>
-				<div class="note">NOTE: Most images on this site are from <a href="https://paladins.com/">Paladins: Champions of the Realm</a>. My intention with this site is not copying or stealing, but to temporarily show some concepts for a similar game I have been dreaming of making. This site is non-profit.</div>
 		</div>
 		<div class="mainContent container-xl" id="characterContent">
 			<div id="Bio_Page" class="Page" page_name="Bio">
@@ -36,8 +35,16 @@
 				<h3>Health: <span id="character_heath"></span></h3>
 				<h3>Speed: <span id="character_speed"></span></h3>
 				<br>
-				<p>Bio, Lore and/or other info: </p>
-				<p id="character_bio"></p>
+				<div id="character_origin_header" class="bio_header">Origin/Inspirations: <span class="bio_details_show_hide unselectable" onclick="ToggleVisibilityOn('#character_origin')">Show/Hide</span></div>
+				<p id="character_origin" class="bio_point hidden"></p>
+				<div id="character_bio_header" class="bio_header">Bio/Lore: <span class="bio_details_show_hide unselectable" onclick="ToggleVisibilityOn('#character_bio')">Show/Hide</span></div>
+				<p id="character_bio" class="bio_point hidden"></p>
+				<div id="character_personality_header" class="bio_header">Personality: <span class="bio_details_show_hide unselectable" onclick="ToggleVisibilityOn('#character_personality')">Show/Hide</span></div>
+				<p id="character_personality" class="bio_point hidden"></p>
+				<div id="character_appearance_header" class="bio_header">Appearance: <span class="bio_details_show_hide unselectable" onclick="ToggleVisibilityOn('#character_appearance')">Show/Hide</span></div>
+				<p id="character_appearance" class="bio_point hidden"></p>
+				<div id="character_other_info_header" class="bio_header">Other Info: <span class="bio_details_show_hide unselectable" onclick="ToggleVisibilityOn('#character_other_info')">Show/Hide</span></div>
+				<p id="character_other_info" class="bio_point hidden"></p>
 			</div>
 			<div id="Ability_Page" class="Page" page_name="Abilities">
 				<select id="stance_select" class="form-select bg-dark text-light" onchange="RefreshAbilitiesPage(this.value)"></select>
@@ -50,10 +57,13 @@
 						</div>
 					</div>
 					<div class="ability_rest_container">
-						<h4 class="ability_name"></h4>
-						<div class="ability_bind"></div>
+						<div class="ability_name_container">
+							<h4 class="ability_name"></h4>
+							<!-- <div class="ability_name_bind_separator"></div> -->
+							<div class="ability_bind"></div>
+						</div>
 						<div class="ability_description"></div>
-						<div class="ability_details_label">Details: <span class="ability_details_show_hide" onclick="ToggleDetails(this)">Show/Hide</span></div>
+						<div class="ability_details_label">Details: <span class="ability_details_show_hide unselectable" onclick="ToggleDetails(this)">Show/Hide</span></div>
 						<div class="ability_details details hidden"></div>
 					</div>
 				</div>
@@ -67,7 +77,7 @@
 					<div class="talent_rest_container">
 						<h4 class="talent_name"></h4>
 						<div class="talent_description"></div>
-						<div class="talent_details_label">Details: <span class="ability_details_show_hide" onclick="ToggleDetails(this)">Show/Hide</span></div>
+						<div class="talent_details_label">Details: <span class="ability_details_show_hide unselectable" onclick="ToggleDetails(this)">Show/Hide</span></div>
 						<div class="talent_details details hidden"></div>
 					</div>
 				</div>
@@ -94,7 +104,9 @@
 				</div>
 			</div>
 		</div>
-		<div style="height: 60px;"></div>
+		<div id="bottom_page_margin">
+			<div class="note">NOTE: Most images on this site are from <a href="https://paladins.com/">Paladins: Champions of the Realm</a>. My intention with this site is not copying or stealing, but to temporarily show some concepts for a similar game I have been dreaming of making. This site is non-profit.</div>
+		</div>
 		
 		<script src="js/translations.js"></script>
 		<script src="js/character_select.js"></script>

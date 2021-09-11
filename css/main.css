@@ -9,8 +9,20 @@ body {
 	color: white!important;*/
 	height: 100%;
 	min-height: 100%;
-	padding-top: 40px;
-	padding-bottom: 60px;
+	padding-top: 1em;
+	padding-bottom: 2.8em;
+}
+
+#bottom_page_margin {
+	min-height: 2.8em;
+}
+
+.unselectable {
+	user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
 }
 
 .Page {
@@ -32,20 +44,47 @@ body {
 	position: relative;
 	width: 100%;
 	max-width: 800px;
-	min-width: 500px;
-	margin: 15px;
-	padding: 10px;
+	/*min-width: 500px;*/
+	margin: 0.5em 0em;
+	padding: 0.4em;
 	background-color: #0E222B;
-	display: flex;
+	/*display: flex;*/
+}
+
+@media only screen and (max-width: 600px) {
+	.ability_icon_container,.talent_icon_container {
+		float: left;
+		margin-right: 0.8em;
+	}
+	.talent {
+		min-height: 10em;
+	}
+	.ability {
+		min-height: 12em;
+	}
+}
+
+@media only screen and (min-width: 601px) {
+	.ability, .talent {
+		display: flex;
+	}
+	
 }
 
 .ability_rest_container > div {
 	margin-top: 5px;
 	margin-bottom: 5px;
+	padding-right: 8px;
 }
 
 .ability_rest_container {
-	margin-left: 15px;
+	margin-left: 0.8em;
+	width: 100%;
+}
+
+.ability_name_container {
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .ability_stances {
@@ -62,56 +101,48 @@ body {
 }
 
 .ability_image {
-	width: 150px;
-	height: 150px;
+	width: 8em;
+	height: 8em;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
+.ability_name {
+	padding-right: 1em;
+	margin-right: auto;
+	
+}
+
 .ability_bind {
+	/*
 	position: absolute;
 	top: 5px;
 	right: 15px;
+	*/
+	padding-right: 0.5em;
 	font-size: 1.2em;
 }
 
-.ability_details_show_hide {
+.ability_details_show_hide, .bio_details_show_hide {
 	font-weight: 700;
 	cursor: pointer;
 }
-
-input.ability_name {
-	/*width: 300px;*/
-}
-
-input.short_input {
-	width: 140px;
-	display: inline-block;
-}
-
-.full_width_textarea {
-	max-width: 100%;
-	width: 100%;
-	min-width: 100%;
-	height: 120px;
-}
-
 
 .talent {
 	position: relative;
 	width: 100%;
 	max-width: 800px;
-	min-width: 500px;
-	margin: 15px;
-	padding: 10px;
+	/*min-width: 500px;*/
+	margin: 0.5em 0em;
+	padding: 0.4em;
 	background-color: #0E222B;
-	display: flex;
+	/*display: flex;*/
 }
 
 .talent_image {
-	width: 150px;
-	height: 150px;
+	width: 8em;
+	height: 8em;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -124,6 +155,7 @@ input.short_input {
 .talent_rest_container > div {
     margin-top: 5px;
     margin-bottom: 5px;
+	padding-right: 8px;
 }
 
 .nav_container {
@@ -185,6 +217,7 @@ input.short_input {
 
 .card_category_cards {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .game_card {
@@ -273,29 +306,29 @@ input.short_input {
 
 .note {
 	color: #BBBBBB;
-	position: absolute;
+	/*position: absolute;
 	bottom: 5px;
-	left: 0px;
+	left: 0px;*/
 	padding: 5px 10px;
 }
 
 .keyword_tooltip .tooltip-inner {
 	/*width: 400px;*/
 	font-size: 1rem;
-	max-width: 400px!important;
-	width: 400px!important;
+	max-width: 100%;
+	width: 400px;
 }
 
 .ability_tooltip .tooltip-inner {
-	width: 840px;
-	max-width: 840px;
+	width: 100%;
+	max-width: 820px;
 	text-align: left;
 	font-size: 1rem;
 }
 
 .talent_tooltip .tooltip-inner {
-	width: 840px;
-	max-width: 840px;
+	width: 100%;
+	max-width: 820px;
 	text-align: left;
 	font-size: 1rem;
 }
@@ -310,4 +343,21 @@ input.short_input {
 .ability_link, .talent_link, .card_link {
 	color: #1adae8;
 	cursor: pointer;
+}
+
+.bio_header {
+	font-size: 1.4em;
+}
+
+.bio_point {
+	margin-left: 1.5em;
+	font-size: 1.2em;
+}
+
+.btn-secondary.clicked_nav {
+	background-color: #363636;
+}
+
+.btn-secondary.clicked_nav:hover {
+	background-color: #333333;
 }
