@@ -209,6 +209,7 @@ function DisplayCard(card, parent, level) {
 	clone.find(".card_description").html($.i18n(card.description));
 	clone.find(".card_cost").html( (card.cost > 0 ? card.cost*current_card_level : '???') + ' ' + icons.cost);
 	//console.log(card_level, current_card_level, max_card_level);
+	card.cooldown = card.cooldown || 0;
 	var displayCooldown = !(card.cooldown === 0);
 	if (displayCooldown) {
 		clone.find(".card_cooldown").html( $.i18n(card.cooldown.toString()) + ' ' + icons.cooldown);

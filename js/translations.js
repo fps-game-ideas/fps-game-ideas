@@ -95,6 +95,10 @@ $.i18n().load({
 		"keyword-speed-name": "Speed", // Movement Speed buff
 		"keyword-speed": "This entity's Movement Speed is increased by x%.",
 		"keyword-slow-name": "{{NTH:$1|Slow|Slowed|Slowing|Slows}}",
-		"keyword-slow": "This entity's Movement Speed is reduced by x%."
+		"keyword-slow": "This entity's Movement Speed is reduced by x%.",
+		
+		// NEW KEYWORD! PLEASE GIVE IT A NAME!
+		"keyword-SHIELDDESTROYED-name": "",
+		"keyword-SHIELDDESTROYED": "This entity cannot use Defensive Abilities, such as Shielding, Blocking or other abilities that, at base, grant {{KW:Armor}}."
 	}
 })

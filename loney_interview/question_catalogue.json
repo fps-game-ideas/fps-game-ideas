@@ -1,0 +1,67 @@
+[
+	{
+		"name": "Where are you from?",
+		"file_name": "origin",
+		"lewd": false
+	},
+	{
+		"name": "Who is he?",
+		"file_name": "who_him",
+		"lewd": false
+	},
+	{
+		"name": "What are your powers?",
+		"file_name": "powers",
+		"lewd": false
+	},
+	{
+		"name": "How much do you use your powers?",
+		"file_name": "power_usage",
+		"lewd": false
+	},
+	{
+		"name": "What did you use your powers for?",
+		"file_name": "power_usage_reasons",
+		"lewd": false
+	},
+	{
+		"name": "How did you change your past?",
+		"file_name": "past_altered",
+		"lewd": false
+	},
+	{
+		"name": "What did you do to your bullies?",
+		"file_name": "bullies",
+		"lewd": false
+	},
+	{
+		"name": "What did you do to your family?",
+		"file_name": "family",
+		"lewd": false
+	},
+	{
+		"name": "What did you do to the two guys?",
+		"file_name": "two_guys",
+		"lewd": true
+	},
+	{
+		"name": "Do you have a boyfriend?",
+		"file_name": "two_guys",
+		"lewd": true
+	},
+	{
+		"name": "How did you not go insane?",
+		"file_name": "insanity",
+		"lewd": false
+	},
+	{
+		"name": "Have you ever considered suicide before?",
+		"file_name": "suicide",
+		"lewd": false
+	},
+	{
+		"name": "End the interview.",
+		"file_name": "ending",
+		"lewd": false
+	}
+]
