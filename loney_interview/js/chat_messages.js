@@ -136,6 +136,7 @@ function LoadDialogue(file_name, repl = true) {
 	});
 }
 
+/*
 var next_question = {
 	title: "Do you want me to censor swear words, profanity and words of a sexual or offensive nature?",
 	answers: ["Yes, please!", "No! Show me the juicy details!"],
@@ -147,7 +148,7 @@ var next_question = {
 	},
 	long_answers : false,
 	fade_map: [false, false]
-}
+}*/
 
 function DisplayQuestion(title, answers, callback, long_answers = false, fade_map = []) {
 	if ((typeof title) == "object") {
@@ -180,7 +181,7 @@ function DisplayQuestion(title, answers, callback, long_answers = false, fade_ma
 	window.scrollTo(0,document.body.scrollHeight);
 }
 
-var no_profanity_mode = false;
+var no_profanity_mode = true;
 var profanity = [
 	"FUCK",
 	"SHIT",
@@ -197,7 +198,10 @@ var profanity = [
 ];
 
 var profanity_exceptions = [
-	"SASS"
+	"SASS",
+	"CLASS",
+	"BYPASS",
+	"ASSAULT"
 ]
 
 function ProfanityProof(message) {
@@ -265,6 +269,7 @@ var questions_data = [];
 $.get("question_catalogue.json", {}, function (data) {
 	questions_data = data;
 	GenerateMainQuestion(data);
+	next_question = main_question;
 });
 
 LoadDialogue("beginning.json");
