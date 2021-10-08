@@ -1,0 +1,236 @@
+{
+    "name": "Princess",
+    "role": "damage",
+    "health": 2200,
+    "speed": 380,
+    "origin": "- Giga Princess and the mech were inspired by Queen from Deltarune Chapter 2.\n- Jet skirt inspired by Scarlet Overkill from the Minions movie.",
+    "bio": "Born to rich parents. She had everything during her childhood and she could get anything she wanted.\nShe was really popular in school and had lots of friends.\nAs she grew up, she kept spending more and more money until her parents got fed up and threw her out of the house.\nAfter seeing that none of her friends want to help her now that she's poor, she looks for a way to take revenge.\nLuckily, there was a certain group that could use her prior experiences in heists . . .",
+    "personality": "- All high and mighty.\n- Often shows no sympathy.\n- Stingy and high spender.\n- Manipulator.",
+    "appearance": "- Pink.\n- Wears a Princess Dress, reinforced by metal and rockets in the skirt area.",
+    "other_info": "- Need inspiration for an actual name/real name pls.",
+    "abilities": [{
+            "name": "Pickpocket",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/retribution.jpg",
+            "cooldown": 0,
+            "charges": 1,
+            "bind": "passive",
+            "description": "Every 1000 damage you deal awards you 5 bonus credits.",
+            "hidden": false,
+            "stances": ["Princess Mode", "Jet Plane Mode", "Mech Mode"],
+            "details": ""
+        }, {
+            "name": "Cash Bomb Launcher",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/rocket-launcher.jpg",
+            "cooldown": 0,
+            "charges": 1,
+            "bind": "primary",
+            "description": "A weapon that can launch a fake cash covered bomb every 1.2 seconds, dealing 1100 damage on a direct hit and 600 damage in a small area around the impact.",
+            "hidden": false,
+            "stances": ["Princess Mode"],
+            "details": "- Has an ammo count of 6 and a reload speed of 2 seconds.\n- The bombs are projectiles (not hitscan) and don't have gravity.\n- Cannot headshot.\n- Flavor Note: All the money this character shoots is fake."
+        }, {
+            "name": "Glitter Grenade",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/frag-grenade.jpg",
+            "cooldown": 7,
+            "charges": 1,
+            "bind": "secondary",
+            "description": "Throw a bomb that explodes after 5 seconds, dealing 300 damage and marking enemies damaged to take 30% more damage from your next weapon shot for 2 seconds. You can cook the bomb for up to 3 seconds before throwing it.",
+            "hidden": false,
+            "stances": ["Princess Mode"],
+            "details": ""
+        }, {
+            "name": "Safe Drop",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/pyre-strike.jpg",
+            "cooldown": 12,
+            "charges": 1,
+            "bind": "ability1",
+            "description": "Mark a spot on the closest floor to where you are looking at. After 1.5 seconds, your Jet Plane will drop a heavy safe to that location, dealing 1000 damage to enemies hit, knocking them back and Stunning them for 1.5 seconds. After that, the safe will act as a 3000-Health deployable wall for 6 seconds.",
+            "hidden": false,
+            "stances": ["Princess Mode"],
+            "details": "- Enemies will hear a warning sound, will have an indicator, and will see a red \"X\" that will signal the location the safe will be dropped on."
+        }, {
+            "name": "Jet-skirt",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/thrust.jpg",
+            "cooldown": 9,
+            "charges": 1,
+            "bind": "ability2",
+            "description": "Her skirt acts like a jetpack that can keep you mid-air for 5 seconds, granting you full Air Control. This ability also increases your jump height for the duration drastically.",
+            "hidden": false,
+            "stances": ["Princess Mode"],
+            "details": "- Uncancelable.\n- Does not charge for the duration."
+        }, {
+            "name": "Stolen Jet Plane",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/fae-flight.jpg",
+            "cooldown": 0,
+            "charges": 1,
+            "bind": "ultimate",
+            "description": "Call your Military Jet and hop into it, controlling it for 15 seconds. The Jet has 2300 Health and can fly indefinitely.",
+            "hidden": false,
+            "stances": ["Princess Mode"],
+            "details": "- Uncancelable.\n- Does charge for the duration.\n- Ultimate Shout: \"Oh, here's my ride~!\" (Enemey/Self), \"What took you so long!?\" (Ally)\n- Being in the Jet counts as being under the Metamorphosis effect, making you immune to other Metamorphosis effects. "
+        }, {
+            "name": "Miniguns",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/miniguns.jpg",
+            "cooldown": 0,
+            "charges": 1,
+            "bind": "primary",
+            "description": "Two Miniguns on the wings of the Jet, both dealing 30 damage every 0.05 seconds. Unlimited ammo.",
+            "hidden": false,
+            "stances": ["Jet Plane Mode"],
+            "details": ""
+        }, {
+            "name": "Missiles",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/missile-launcher.jpg",
+            "cooldown": 5,
+            "charges": 1,
+            "bind": "secondary",
+            "description": "Launch two Missiles from under the Jet, both dealing 500 damage in a small area.",
+            "hidden": false,
+            "stances": ["Jet Plane Mode"],
+            "details": ""
+        }, {
+            "name": "Eject",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/billow.jpg",
+            "cooldown": 3,
+            "charges": 1,
+            "bind": "ability1",
+            "description": "Set the Jet to self-destruct, making it go crashing down, dealing 1200 damage in an area. As soon as you do that, jump out of the Jet.",
+            "hidden": false,
+            "stances": ["Jet Plane Mode"],
+            "details": ""
+        }, {
+            "name": "Mech Power",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/hexa-fire.jpg",
+            "cooldown": 0,
+            "charges": 1,
+            "bind": "ultimate",
+            "description": "Call down a mech 3x the size of you from above and hop into it for an unlimited duration. The Mech has 2000 Health, a very slow Movement Speed and an inability to jump. Both you and the Mech are {{KW:INVULNERABLE}} and {{KW:IMMOVABLE}}. The Mech has a base {{KW:ARMOR}} of 35 and a {{KW:RESILIENCE}} of 50.",
+            "hidden": true,
+            "stances": ["Princess Mode"],
+            "details": ""
+        }, {
+            "name": "Boxing Punch",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/defiance.jpg",
+            "cooldown": 0,
+            "charges": 1,
+            "bind": "primary",
+            "description": "Punch forward every 0.7 seconds, dealing 600 Damage at melee-to-short range.",
+            "hidden": false,
+            "stances": ["Mech Mode"],
+            "details": ""
+        }, {
+            "name": "Boxing Kick",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/disengage.jpg",
+            "cooldown": 6,
+            "charges": 1,
+            "bind": "secondary",
+            "description": "After a 0.8 second warning, kick forward in a short range, dealing 600 Damage and Knock enemies Back with your right leg. If you attempt to use the second Charge of this ability while the warning is happening, consume the charge, increase the warning duration to 1.2 seconds, but do both kicks in a rapid succession, first with right, then with your left leg.",
+            "hidden": false,
+            "stances": ["Mech Mode"],
+            "details": ""
+        }, {
+            "name": "Fireball Breath",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/fireball.jpg",
+            "cooldown": 10,
+            "charges": 1,
+            "bind": "ability1",
+            "description": "Heat up your mouth over a 1.4 second warning, after which begin to spew out Fireballs at a rate of 1 every 0.2 seconds, each dealing 300 Damage instantly, making them burn for 300 Damage over 2 seconds after as well. The fire damage does not stack.",
+            "hidden": false,
+            "stances": ["Mech Mode"],
+            "details": ""
+        }, {
+            "name": "Mech Eject",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/cataclysm.jpg",
+            "cooldown": 3,
+            "charges": 1,
+            "bind": "ability2",
+            "description": "Jump out of the back of the head of the mech, turning it off and causing it to tumble and fall forward, dealing 800 Damage to anyone who happens to be underneath.",
+            "hidden": false,
+            "stances": ["Mech Mode"],
+            "details": ""
+        }
+    ],
+    "talents": [{
+            "name": "Spilled Gold",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-legendaries-badge/fusillade.png",
+            "cooldown": 0,
+            "description": "{{ABILITY:1}}'s projectile is modified. It no longer deals splash damage, but if you hit an enemy with a direct hit, a bunch of gold will spread onto enemies behind the target in a cone instead, dealing 600 damage to every enemy hit by it. Shields and walls block the gold.\n",
+            "details": ""
+        }, {
+            "name": "High Ground",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-legendaries-badge/w.y.r.m.-jets.png",
+            "cooldown": 0,
+            "description": "While {{ABILITY:4}} is activated {{ABILITY:1}} shoots 30% faster, but you also take 20% increased damage.",
+            "details": ""
+        }, {
+            "name": "Rich Joke",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-legendaries-badge/accelerant.png",
+            "cooldown": 0,
+            "description": "{{ABILITY:3}} has two charges.",
+            "details": ""
+        }, {
+            "name": "Giga Princess",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-legendaries-badge/unnatural-persistence.png",
+            "cooldown": 0,
+            "description": "Change {{ABILITY:5}} to {{ABILITY:9}}.",
+            "details": ""
+        }
+    ],
+    "stances": ["Princess Mode", "Jet Plane Mode", "Mech Mode"],
+    "card_categories": [{
+            "name": "Cash Bomb Launcher",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/rocket-launcher.jpg",
+            "cards": [{
+                    "name": "Coin Magnet",
+                    "image": "https://webcdn.hirezstudios.com/paladins/champion-cards/chase.jpg",
+                    "description": "Reduce the amount of damage required for {{ABILITY:0}} to trigger by {{SCALE:50|50}}.",
+                    "cost": 0,
+                    "max_level": 5,
+                    "cooldown": ""
+                }, {
+                    "name": "Mechanical Upgrades",
+                    "image": "https://webcdn.hirezstudios.com/paladins/champion-cards/fuel-reserves.jpg",
+                    "description": "Jet plain has +{{SCALE:10|10}} {{KW:SPEED}}. Reduce the Movement Speed Penalty of the Mech by {{SCALE:16|16}}%.",
+                    "cost": 0,
+                    "max_level": 5,
+                    "cooldown": ""
+                }
+            ]
+        }, {
+            "name": "Glitter Grenade",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/frag-grenade.jpg",
+            "cards": [{
+                    "name": "Sparkly",
+                    "image": "https://webcdn.hirezstudios.com/paladins/champion-cards/glimmer.jpg",
+                    "description": "Enemies hit by {{ABILITY:2}} are {{KW:Slow|2}} by 30 for {{SCALE:0.5|0.5}} seconds.",
+                    "cost": 0,
+                    "max_level": 5,
+                    "cooldown": ""
+                }, {
+                    "name": "Parade",
+                    "image": "https://webcdn.hirezstudios.com/paladins/champion-cards/a-broken-path.jpg",
+                    "description": "Gain {{SCALE:1|1}}% Ultimate Charge for each enemy hit by {{ABILITY:2}}.",
+                    "cost": 0,
+                    "max_level": 0,
+                    "cooldown": ""
+                }
+            ]
+        }, {
+            "name": "Safe Drop",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/pyre-strike.jpg",
+            "cards": []
+        }, {
+            "name": "Jet-skirt",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/thrust.jpg",
+            "cards": [{
+                    "name": "Fight and Flight",
+                    "image": "https://webcdn.hirezstudios.com/paladins/champion-cards/decimate.jpg",
+                    "description": "Successful direct hits with {{ABILITY:1}} during {{ABILITY:4}} refund {{SCALE:0.1|0.1}} seconds of its duration.",
+                    "cost": 0,
+                    "max_level": 5,
+                    "cooldown": ""
+                }
+            ]
+        }
+    ]
+}
