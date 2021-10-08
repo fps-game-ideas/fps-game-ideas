@@ -122,7 +122,7 @@
             "name": "Boxing Kick",
             "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/disengage.jpg",
             "cooldown": 6,
-            "charges": 1,
+            "charges": 2,
             "bind": "secondary",
             "description": "After a 0.8 second warning, kick forward in a short range, dealing 600 Damage and Knock enemies Back with your right leg. If you attempt to use the second Charge of this ability while the warning is happening, consume the charge, increase the warning duration to 1.2 seconds, but do both kicks in a rapid succession, first with right, then with your left leg.",
             "hidden": false,
