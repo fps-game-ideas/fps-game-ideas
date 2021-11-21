@@ -25,81 +25,91 @@
 	</head>
 	
 	<body class="bg-dark text-light">
-		<div class="mainContent container-xl" id="characterSelection">
-			<div id="characterList"></div>
-		</div>
-		<div class="mainContent container-xl" id="characterContent">
-			<div id="Bio_Page" class="Page" page_name="Bio">
-				<h1 id="character_name"></h1>
-				<h3 id="character_role"></h3>
-				<h3>Health: <span id="character_heath"></span></h3>
-				<h3>Speed: <span id="character_speed"></span></h3>
-				<br>
-				<div id="character_origin_header" class="bio_header">Origin/Inspirations: <span class="bio_details_show_hide unselectable" onclick="ToggleVisibilityOn('#character_origin')">Show/Hide</span></div>
-				<p id="character_origin" class="bio_point hidden"></p>
-				<div id="character_bio_header" class="bio_header">Bio/Lore: <span class="bio_details_show_hide unselectable" onclick="ToggleVisibilityOn('#character_bio')">Show/Hide</span></div>
-				<p id="character_bio" class="bio_point hidden"></p>
-				<div id="character_personality_header" class="bio_header">Personality: <span class="bio_details_show_hide unselectable" onclick="ToggleVisibilityOn('#character_personality')">Show/Hide</span></div>
-				<p id="character_personality" class="bio_point hidden"></p>
-				<div id="character_appearance_header" class="bio_header">Appearance: <span class="bio_details_show_hide unselectable" onclick="ToggleVisibilityOn('#character_appearance')">Show/Hide</span></div>
-				<p id="character_appearance" class="bio_point hidden"></p>
-				<div id="character_other_info_header" class="bio_header">Other Info: <span class="bio_details_show_hide unselectable" onclick="ToggleVisibilityOn('#character_other_info')">Show/Hide</span></div>
-				<p id="character_other_info" class="bio_point hidden"></p>
+		<div id="full_page_container">
+			<div class="mainContent container-xl" id="characterSelection">
+				<h1>Choose a character!</h1>
+				<div id="characterList"></div>
 			</div>
-			<div id="Ability_Page" class="Page" page_name="Abilities">
-				<select id="stance_select" class="form-select bg-dark text-light" onchange="RefreshAbilitiesPage(this.value)"></select>
-				<div class="ability hidden">
-					<div class="ability_icon_container">
-						<div class="ability_image"></div>
-						<div class="ability_cooldown_container">
-							<span class="ability_cooldown"></span>
-							<span class="ability_charges"></span>
+			<div class="container-xl" id="Navbar">
+				<div class="row">
+					<div class="col" id="Navbar_Left_Character"><i class="bi bi-arrow-left"></i> <span id="Navbar_Left_Character_Name">Loney</span></div>
+					<div class="col" onclick="GoToCharacterSelectionScreen()">Character Select</div>
+					<div class="col" id="Navbar_Right_Character"><span id="Navbar_Right_Character_Name">Sophia</span> <i class="bi bi-arrow-right"></i></div>
+				</div>
+			</div>
+			<div class="mainContent container-xl" id="characterContent">
+				<div id="Bio_Page" class="Page" page_name="Bio">
+					<h1 id="character_name"></h1>
+					<h3 id="character_role"></h3>
+					<h3>Health: <span id="character_heath"></span></h3>
+					<h3>Speed: <span id="character_speed"></span></h3>
+					<br>
+					<div id="character_origin_header" class="bio_header">Origin/Inspirations: <span class="bio_details_show_hide unselectable" onclick="ToggleVisibilityOn('#character_origin')">Show/Hide</span></div>
+					<p id="character_origin" class="bio_point hidden"></p>
+					<div id="character_bio_header" class="bio_header">Bio/Lore: <span class="bio_details_show_hide unselectable" onclick="ToggleVisibilityOn('#character_bio')">Show/Hide</span></div>
+					<p id="character_bio" class="bio_point hidden"></p>
+					<div id="character_personality_header" class="bio_header">Personality: <span class="bio_details_show_hide unselectable" onclick="ToggleVisibilityOn('#character_personality')">Show/Hide</span></div>
+					<p id="character_personality" class="bio_point hidden"></p>
+					<div id="character_appearance_header" class="bio_header">Appearance: <span class="bio_details_show_hide unselectable" onclick="ToggleVisibilityOn('#character_appearance')">Show/Hide</span></div>
+					<p id="character_appearance" class="bio_point hidden"></p>
+					<div id="character_other_info_header" class="bio_header">Other Info: <span class="bio_details_show_hide unselectable" onclick="ToggleVisibilityOn('#character_other_info')">Show/Hide</span></div>
+					<p id="character_other_info" class="bio_point hidden"></p>
+				</div>
+				<div id="Ability_Page" class="Page" page_name="Abilities">
+					<select id="stance_select" class="form-select bg-dark text-light" onchange="RefreshAbilitiesPage(this.value)"></select>
+					<div class="ability hidden">
+						<div class="ability_icon_container">
+							<div class="ability_image"></div>
+							<div class="ability_cooldown_container">
+								<span class="ability_cooldown"></span>
+								<span class="ability_charges"></span>
+							</div>
+						</div>
+						<div class="ability_rest_container">
+							<div class="ability_name_container">
+								<h4 class="ability_name"></h4>
+								<!-- <div class="ability_name_bind_separator"></div> -->
+								<div class="ability_bind"></div>
+							</div>
+							<div class="ability_description"></div>
+							<div class="ability_details_label">Details: <span class="ability_details_show_hide unselectable" onclick="ToggleDetails(this)">Show/Hide</span></div>
+							<div class="ability_details details hidden"></div>
 						</div>
 					</div>
-					<div class="ability_rest_container">
-						<div class="ability_name_container">
-							<h4 class="ability_name"></h4>
-							<!-- <div class="ability_name_bind_separator"></div> -->
-							<div class="ability_bind"></div>
+				</div>
+				<div id="Talents_Page" class="Page" page_name="Talents">
+					<div class="talent hidden">
+						<div class="talent_icon_container">
+							<div class="talent_image"></div>
+							<div class="talent_cooldown"></div>
 						</div>
-						<div class="ability_description"></div>
-						<div class="ability_details_label">Details: <span class="ability_details_show_hide unselectable" onclick="ToggleDetails(this)">Show/Hide</span></div>
-						<div class="ability_details details hidden"></div>
+						<div class="talent_rest_container">
+							<h4 class="talent_name"></h4>
+							<div class="talent_description"></div>
+							<div class="talent_details_label">Details: <span class="ability_details_show_hide unselectable" onclick="ToggleDetails(this)">Show/Hide</span></div>
+							<div class="talent_details details hidden"></div>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div id="Talents_Page" class="Page" page_name="Talents">
-				<div class="talent hidden">
-					<div class="talent_icon_container">
-						<div class="talent_image"></div>
-						<div class="talent_cooldown"></div>
+				<div id="Cards_Page" class="Page" page_name="Cards">
+					<!-- <div id="card_level_select"></div> -->
+					<select id="card_level_select" class="form-select bg-dark text-light" onchange="RefreshCardsPage(this.value)"></select>
+					<div class="card_category hidden">
+						<div class="card_category_header">
+							<div class="card_category_image"></div>
+							<div type="text" class="card_category_name"></div>
+						</div>
+						<div class="card_category_cards"></div>
 					</div>
-					<div class="talent_rest_container">
-						<h4 class="talent_name"></h4>
-						<div class="talent_description"></div>
-						<div class="talent_details_label">Details: <span class="ability_details_show_hide unselectable" onclick="ToggleDetails(this)">Show/Hide</span></div>
-						<div class="talent_details details hidden"></div>
-					</div>
-				</div>
-			</div>
-			<div id="Cards_Page" class="Page" page_name="Cards">
-				<!-- <div id="card_level_select"></div> -->
-				<select id="card_level_select" class="form-select bg-dark text-light" onchange="RefreshCardsPage(this.value)"></select>
-				<div class="card_category hidden">
-					<div class="card_category_header">
-						<div class="card_category_image"></div>
-						<div type="text" class="card_category_name"></div>
-					</div>
-					<div class="card_category_cards"></div>
-				</div>
-				<div class="game_card hidden">
-					<div class="card_name"></div>
-					<div class="card_image"></div>
-					<div class="card_description_container"><div class="card_description"></div></div>
-					<div class="card_cost_level row">
-						<div class="card_cost col"></div>
-						<div class="card_cooldown col"></div>
-						<div class="card_level col"></div>
+					<div class="game_card hidden">
+						<div class="card_name"></div>
+						<div class="card_image"></div>
+						<div class="card_description_container"><div class="card_description"></div></div>
+						<div class="card_cost_level row">
+							<div class="card_cost col"></div>
+							<div class="card_cooldown col"></div>
+							<div class="card_level col"></div>
+						</div>
 					</div>
 				</div>
 			</div>

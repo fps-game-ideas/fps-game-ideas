@@ -1,15 +1,24 @@
 
+function GoToCharacterSelectionScreen() {
+	history.pushState({}, "Character Viewer!", window.location.origin + window.location.pathname);
+	CharacterSelectionScreen();
+}
+
 function CharacterSelectionScreen() {
+	$("title").html("Character Viewer!");
 	$(".nav_container").addClass("hidden");
 	$("#characterContent").addClass("hidden");
-	GetCharactersList(function (characters) {
-		var html = '<h1>Choose a character!</h1>';
-		for (var i=0; i < characters.length; i++) {
-			var character = characters[i];
-			html += '<br><a href="?character=' + character + '">' + character + '</a>';
-		}
-		$("#characterList").append(html);
-	});
+	$("#characterSelection").removeClass("hidden");
+	$("#Navbar").addClass("hidden");
+	$(".note").removeClass("hidden");
+	//var html = '<h1>Choose a character!</h1>';
+	var html = '';
+	for (var i=0; i < characters.length; i++) {
+		var character = characters[i];
+		html += '<div class="CharacterSelectName" onclick="ChangePage(\'Bio_Page\');GoToViewCharacterScreen(\'' + character + '\');"><div class="character_icon" style="background-image: url(\'img/character_icons/' + character + '.png\')"></div>' + character + '</div>';
+	}
+	$("#characterList").html(html);
+	
 }
 
 function GetCharactersList(callback) {

@@ -190,7 +190,7 @@
                 }, {
                     "name": "Mechanical Upgrades",
                     "image": "https://webcdn.hirezstudios.com/paladins/champion-cards/fuel-reserves.jpg",
-                    "description": "Jet plain has +{{SCALE:10|10}} {{KW:SPEED}}. Reduce the Movement Speed Penalty of the Mech by {{SCALE:16|16}}%.",
+                    "description": "Jet Plane has +{{SCALE:8|8}} {{KW:SPEED}}. Reduce the Movement Speed Penalty of the Mech by {{SCALE:10|10}}%.",
                     "cost": 0,
                     "max_level": 5,
                     "cooldown": ""
@@ -211,7 +211,21 @@
                     "image": "https://webcdn.hirezstudios.com/paladins/champion-cards/a-broken-path.jpg",
                     "description": "Gain {{SCALE:1|1}}% Ultimate Charge for each enemy hit by {{ABILITY:2}}.",
                     "cost": 0,
-                    "max_level": 0,
+                    "max_level": 5,
+                    "cooldown": ""
+                }, {
+                    "name": "Killer Combo",
+                    "image": "https://webcdn.hirezstudios.com/paladins/champion-cards/chase.jpg",
+                    "description": "Hitting an enemy with {{ABILITY:1}} while being affected by {{ABILITY:2}} reduces its cooldown by {{SCALE:1|1}} second.",
+                    "cost": 0,
+                    "max_level": 5,
+                    "cooldown": "3"
+                }, {
+                    "name": "Green Sparks",
+                    "image": "https://webcdn.hirezstudios.com/paladins/champion-cards/glimmer.jpg",
+                    "description": "You have +{{SCALE:7|7}} {{KW:Lifesteal}} against enemies affected by {{ABILITY:2}}.",
+                    "cost": 0,
+                    "max_level": 5,
                     "cooldown": ""
                 }
             ]
@@ -226,6 +240,13 @@
                     "name": "Fight and Flight",
                     "image": "https://webcdn.hirezstudios.com/paladins/champion-cards/decimate.jpg",
                     "description": "Successful direct hits with {{ABILITY:1}} during {{ABILITY:4}} refund {{SCALE:0.1|0.1}} seconds of its duration.",
+                    "cost": 0,
+                    "max_level": 5,
+                    "cooldown": ""
+                }, {
+                    "name": "Full Tanks",
+                    "image": "https://webcdn.hirezstudios.com/paladins/champion-cards/fuel-reserves.jpg",
+                    "description": "Increase the duration of {{ABILITY:4}} by {{SCALE:0.6|0.6}} seconds.",
                     "cost": 0,
                     "max_level": 5,
                     "cooldown": ""

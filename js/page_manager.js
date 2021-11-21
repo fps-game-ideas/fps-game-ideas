@@ -32,10 +32,26 @@ $("#characterContent").append(container);
 
 ChangePage("Bio_Page");
 
-var params = new URLSearchParams(window.location.search)
-
-if (params.get("character") != null) {
-	ViewCharacterPage(params.get("character"));
-} else {
-	CharacterSelectionScreen();
+window.onpopstate = function(event) {
+	console.log(`location: ${document.location}, state: ${JSON.stringify(event.state)}`);
+	HandlePageSetup();
 }
+
+var characters = {}
+
+function HandlePageSetup() {
+	var params = new URLSearchParams(window.location.search);
+	if (params.get("character") != null) {
+		console.log("Viewing Character! " + params.get("character"));
+		ViewCharacterPage(params.get("character"));
+	} else {
+		console.log("Viewing Character Select!");
+		CharacterSelectionScreen();
+	}
+}
+
+GetCharactersList(function (data) {
+	characters = data;
+	HandlePageSetup();
+})
+

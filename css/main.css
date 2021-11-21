@@ -33,11 +33,18 @@ body {
 	display: none!important;
 }
 
+#full_page_container {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
 .mainContent {
 	background-color: rgba(0, 0, 0, 0.5);
 	padding: .5rem;
 	border-radius: .5rem;
 	min-height: 100%;
+	flex: 1 1 auto;
 }
 
 .ability {
@@ -360,4 +367,55 @@ body {
 
 .btn-secondary.clicked_nav:hover {
 	background-color: #333333;
+}
+
+#Navbar {
+	text-align: center;
+	background-color: #333333;
+	margin-bottom: 5px;
+	border-radius: 0.5rem;
+	font-size: 1.5em;
+	user-select: none;
+}
+
+#Navbar .col:hover {
+	color: #AAAAAA;
+	background-color: #222222;
+}
+
+#Navbar_Left_Character {
+	text-align: left;
+}
+
+#Navbar_Right_Character {
+	text-align: right;
+}
+
+.CharacterSelectName {
+	cursor: pointer;
+	font-size: 2em;
+	min-width: 10em;
+	width: 33%;
+	padding: 0.1em;
+	/*padding-top: 0.5em;*/
+	display: flex;
+	align-items: flex-end;
+	background-color: #444444;
+	margin: 0.1%;
+	user-select: none;
+}
+
+.CharacterSelectName .character_icon {
+	border: 2px solid black;
+	height: 2.5em;
+	width: 2.5em;
+	margin: 0.25em;
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+#characterList {
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
 }

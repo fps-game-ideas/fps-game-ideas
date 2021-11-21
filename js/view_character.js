@@ -23,10 +23,39 @@ var icons = {
 	level: '<i class="bi bi-arrow-up" title="Card Level" data-toggle="tooltip"></i>'
 }
 
+
+function GoToViewCharacterScreen(char_name) {
+	history.pushState({}, char_name + " - Character Viewer!", window.location.origin + window.location.pathname + "?character=" + char_name);
+	ViewCharacterPage(char_name);
+}
+
 function ViewCharacterPage(char_name) {
+	$("title").html(char_name + " - Character Viewer!");
 	$("#characterSelection").addClass("hidden");
+	$(".nav_container").removeClass("hidden");
+	$("#characterContent").removeClass("hidden");
 	$(".note").addClass("hidden");
+	$("#Navbar").removeClass("hidden");
 	GetCharacterJSON(char_name);
+	
+	var id = characters.findIndex(val => val == char_name);
+	if (id == -1) {
+		$("#Navbar_Left_Character_Name").html("ERROR!");
+		$("#Navbar_Right_Character_Name").html("ERROR!");
+		$("#Navbar_Left_Character").unbind("click");
+		$("#Navbar_Right_Character").unbind("click");
+	} else {
+		var id_left = (id == 0 ? characters.length-1 : id-1);
+		var id_right = (id == characters.length -1 ? 0 : id+1);
+		$("#Navbar_Left_Character_Name").html(characters[id_left]);
+		$("#Navbar_Right_Character_Name").html(characters[id_right]);
+		$("#Navbar_Left_Character").unbind("click").click(function() {
+			GoToViewCharacterScreen(characters[id_left]);
+		});
+		$("#Navbar_Right_Character").unbind("click").click(function() {
+			GoToViewCharacterScreen(characters[id_right]);
+		});
+	}
 }
 
 var char_data = {};
@@ -59,12 +88,14 @@ function GetCharacterJSON(name) {
 				html += '<option value="' + stance + '">' + stance + '</option>';
 			}
 			$("#stance_select").html(html);
+			$("#stance_select").removeClass("hidden");
 		} else {
 			$("#stance_select").addClass("hidden");
 		}
 		
 		RefreshAbilitiesPage();
 		
+		$(".talent:not(.hidden)").remove();
 		for (var i=0; i < data.talents.length; i++) {
 			var talent = data.talents[i];
 			DisplayTalent(talent, $("#Talents_Page"));
@@ -210,7 +241,7 @@ function DisplayCard(card, parent, level) {
 	clone.find(".card_cost").html( (card.cost > 0 ? card.cost*current_card_level : '???') + ' ' + icons.cost);
 	//console.log(card_level, current_card_level, max_card_level);
 	card.cooldown = card.cooldown || 0;
-	var displayCooldown = !(card.cooldown === 0);
+	var displayCooldown = !(card.cooldown == 0);
 	if (displayCooldown) {
 		clone.find(".card_cooldown").html( $.i18n(card.cooldown.toString()) + ' ' + icons.cooldown);
 	} else {
