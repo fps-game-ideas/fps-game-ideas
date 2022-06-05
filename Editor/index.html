@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Character Editor</title>
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/highlighted_input.css">
+		<script src="js/jquery-3.6.0.min.js"></script>
+		<link rel="stylesheet" href="css/image-picker.css">
+		
+		<script src="js/bootstrap/bootstrap.min.js"></script>
+		<script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+		<link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap/bootstrap-grid.min.css">
+		<link rel="stylesheet" href="css/bootstrap/bootstrap-reboot.min.css">
+		<link rel="stylesheet" href="css/bootstrap/bootstrap-utilities.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	
+	<body class="bg-dark text-light">
+		<div class="mainContent container-xl">
+			<div id="Bio_Page" class="Page" page_name="Bio">
+				<div>Name: <input type="text" id="character_name" class="form-control bg-dark text-light"></div>
+				<div>Role: <select id="character_role" class="form-select bg-dark text-light">
+					<option value="unknown">Unknown</option>
+					<option value="tank">Tank</option>
+					<option value="healer">Healer</option>
+					<option value="damage">Damage</option>
+					<option value="flank">Flank</option>
+				</select></div>
+				<div>Health: <input type="number" id="character_hp" class="form-control bg-dark text-light"></div>
+				<div>Speed: <input type="number" id="character_spd" class="form-control bg-dark text-light"></div>
+				<div>Origin/Inspiration: </div>
+				<div><textarea id="character_origin" class="full_width_textarea form-control bg-dark text-light"></textarea></div>
+				<div>Bio/Lore: </div>
+				<div><textarea id="character_bio" class="full_width_textarea form-control bg-dark text-light"></textarea></div>
+				<div>Personality: </div>
+				<div><textarea id="character_personality" class="full_width_textarea form-control bg-dark text-light"></textarea></div>
+				<div>Appearance: </div>
+				<div><textarea id="character_appearance" class="full_width_textarea form-control bg-dark text-light"></textarea></div>
+				<div>Other info: </div>
+				<div><textarea id="character_other_info" class="full_width_textarea form-control bg-dark text-light"></textarea></div>
+			</div>
+			<div id="Ability_Page" class="Page" page_name="Abilities">
+				<div>Stances: <input id="character_stances" type="text" class="form-control bg-dark text-light"></div>
+				<button id="add_ability_btn" class="btn btn-primary" onclick="AddAbility()">Add Ability!</button>
+				<button id="apply_stances_btn" class="btn btn-primary" onclick="ApplyStances()">Apply Stances!</button>
+				
+				<div class="ability hidden">
+					<div class="ability_icon_container">
+						<div class="ability_image"></div>
+						<button class="btn btn-primary" onclick="OpenImageSelectorForAbility(ability_images, this)">Change Image!</button>
+						<div class="ability_id"></div>
+					</div>
+					<div class="ability_rest_container">
+						<div>Name: <input type="text" class="ability_name form-control bg-dark text-light">  Bind: <select class="form-select ability_bind bg-dark text-light" onchange="ApplyAbilityBindChange(this)"><option value="passive">Passive</option>
+							<option value="primary">Primary Fire</option>
+							<option value="secondary">Secondary Fire</option>
+							<option value="ability1">Ability 1</option>
+							<option value="ability2">Ability 2</option>
+							<option value="ultimate">Ultimate</option>
+						</select></div>
+						<div>Cooldown: <input type="number" class="ability_cooldown form-control short_input bg-dark text-light"> sec.  Charges: <input type="number" class="ability_charges form-control short_input bg-dark text-light" value="1"></div>
+						<div>Description:</div>
+						<div class="abilityDescPlace"></div>
+						<div>Is Hidden? <input type="checkbox" class="form-check-input ability_hidden bg-dark text-light"></div>
+						<div class="ability_stances_container">Stances: <select type="text" multiple class="form-control multiple ability_stances bg-dark text-light">
+						</select></div>
+						<div>Details:</div>
+						<div><textarea class="ability_details full_width_textarea form-control bg-dark text-light"></textarea></div>
+						<button class="remove_ability_btn btn btn-danger" onclick="RemoveAbility(this)">Remove Ability!</button>
+					</div>
+				</div>
+			</div>
+			<div id="Talents_Page" class="Page" page_name="Talents">
+				<button id="add_talent_btn" class="btn btn-primary" onclick="AddTalent()">Add Talent!</button>
+				<div class="talent hidden">
+					<div class="talent_icon_container">
+						<div class="talent_image"></div>
+						<button class="btn btn-primary" onclick="OpenImageSelectorForTalent(ability_images, this)">Change Image!</button>
+						<div class="talent_id"></div>
+					</div>
+					<div class="talent_rest_container">
+						<div>Name: <input type="text" class="talent_name form-control bg-dark text-light"></div>
+						<div>Cooldown: <input type="number" class="talent_cooldown short_input form-control bg-dark text-light"> sec.</div>
+						<div>Description:</div>
+						<div class="talentDescPlace"></div>
+						<div>Details:</div>
+						<div><textarea class="talent_details full_width_textarea form-control bg-dark text-light"></textarea></div>
+						<button class="remove_ability_btn btn btn-danger" onclick="RemoveTalent(this)">Remove Talent!</button>
+					</div>
+				</div>
+				
+			</div>
+			<div id="Cards_Page" class="Page" page_name="Cards">
+				<button id="add_card_category_btn" class="btn btn-primary" onclick="AddCardCategory()">Add Card Category!</button>
+				<div class="card_category hidden">
+					<div class="card_category_header">
+						<div class="card_category_image" onclick="OpenImageSelectorForCardCategory(pala_images, this)"></div>
+						<input type="text" class="card_category_name form-control bg-dark text-light">
+						<button class="add_card_btn btn btn-primary" onclick="AddCard(this)">Add Card!</button>
+						<button class="remove_card_category_btn btn btn-danger" onclick="PromptCardCategoryRemoval(this)">Remove Category!</button>
+					</div>
+					<div class="card_category_cards"></div>
+				</div>
+				<div class="game_card hidden">
+					<div class="card_name"><input type="text" class="card_name_input" placeholder="Card name..."></div>
+					<div class="card_image" onclick="OpenImageSelectorForCard(pala_images, this)"></div>
+					<div class="card_description"><textarea class="card_description_input full_width_textarea" placeholder="Card description..."></textarea></div>
+					<div class="card_cost_level">
+						<input type="number" class="card_cost_input" placeholder="Base cost...">
+						<input type="number" class="card_max_level_input short_input" placeholder="Max level...">
+					</div>
+					<div class="card_cooldown">
+						<input type="text" class="card_cooldown_input" placeholder="Cooldown..."> sec.
+						<button class="remove_card_btn btn btn-danger" onclick="RemoveCard(this)">Remove!</button>
+					</div>
+				</div>
+			</div>
+			<div id="SaveLoad_Page" class="Page" page_name="Save/Load">
+				<button class="btn btn-primary" onclick="SaveFile()">Save Character!</button><br><br>
+				<input type="file" class="form-control-file" id="loadFile">
+				<button class="btn btn-primary" onclick="LoadFile()">Load Character!</button>
+			</div>
+		</div>
+		<div style="height: 60px;"></div>
+		
+		<script src="js/paladins.js"></script>
+		<script src="js/copy_hovers.js"></script>
+		<script src="js/highlight_inputs.js"></script>
+		<script src="js/image_selector.js"></script>
+		<script src="js/page_manager.js"></script>
+		<script src="js/abilities_manager.js"></script>
+		<script src="js/talents_manager.js"></script>
+		<script src="js/cards_manager.js"></script>
+		<script src="js/save_load_manager.js"></script>
+	</body>
+</html>

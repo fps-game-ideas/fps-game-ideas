@@ -1,0 +1,234 @@
+
+html {
+	height: 100%;
+	min-height: 100%;
+}
+
+body {
+	/*background-color: #0E222B!important;
+	color: white!important;*/
+	height: 100%;
+	min-height: 100%;
+	padding-top: 40px;
+	padding-bottom: 60px;
+}
+
+.Page {
+	height: 100%;
+}
+
+.hidden {
+	display: none!important;
+}
+
+.mainContent {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: .5rem;
+	border-radius: .5rem;
+	min-height: 100%;
+}
+
+.ability {
+	position: relative;
+	width: 800px;
+	max-width: 800px;
+	margin: 15px;
+	padding: 10px;
+	background-color: #0E222B;
+}
+
+.ability_rest_container > div {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.ability input,.ability select {
+	display: inline-block;
+}
+
+.ability_icon_container {
+	position: absolute;
+}
+
+.ability_rest_container {
+	margin-left: 170px;
+}
+
+.ability_stances {
+	width: 100%;
+}
+
+.ability_image {
+	width: 150px;
+	height: 150px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+select.ability_bind {
+	width: 150px;
+	/*position: absolute;
+	top: 40px;
+	right: 10px;*/
+}
+
+input.ability_name {
+	width: 300px;
+}
+
+input.short_input {
+	width: 140px;
+	display: inline-block;
+}
+
+.full_width_textarea {
+	max-width: 100%;
+	width: 100%;
+	min-width: 100%;
+	height: 120px;
+}
+
+
+.talent {
+	position: relative;
+	width: 800px;
+	max-width: 800px;
+	margin: 15px;
+	padding: 10px;
+	background-color: #0E222B;
+}
+
+.talent_image {
+	width: 150px;
+	height: 150px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.talent_icon_container {
+	position: absolute;
+}
+
+.talent_rest_container {
+	margin-left: 170px;
+}
+
+.talent_rest_container > div {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.nav_container {
+	position: fixed;
+	overflow:hidden;
+	border-radius: .25rem;
+	bottom: 0px;
+	left: 0px;
+}
+
+.btn_nav {
+	padding: .375rem .75rem;
+	text-align: center;
+	cursor: pointer;
+}
+
+.form-select {
+	
+}
+
+#image_selector_body img {
+	margin: 5px;
+	height: 150px;
+}
+
+#image_selector_modal .modal-content {
+	background-color: #0E222B!important;
+}
+
+.ultimate_image {
+	clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+.card_category {
+	background-color: #0E222B;
+	margin: 15px;
+}
+
+.card_category_header {
+	width: 100%;
+	height: 2.5em;
+	display: flex;
+}
+
+.card_category_image {
+	height: 2.5em;
+	width: 2.5em;
+	min-width: 2.5em;
+	margin-right: 0.2em;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.add_card_btn {
+	width: 8em;
+	margin-left: 0.2em;
+}
+
+.remove_card_category_btn {
+	width: 15em;
+	margin-left: 0.2em;
+}
+
+#card_category_remove_modal .modal-content {
+	background-color: #0E222B!important;
+}
+
+.game_card {
+	position: relative;
+	display: inline-block;
+	width: 256px;
+	background-color: #0E3940;
+	margin: 5px;
+}
+
+.game_card .card_image {
+	width: 256px;
+	height: 196px;
+	left: 0px;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.game_card .card_name {
+	width: 100%;
+}
+
+.game_card .card_name_input {
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.game_card .card_cost_level input {
+	width: 49%;
+	margin: 0;
+}
+
+.game_card input, .game_card textarea {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.card_cooldown_input {
+	width: 130px;
+}
+
+.ability_id,.talent_id {
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 2.6em;
+	text-align: center;
+	user-select: none;
+	cursor: pointer;
+}

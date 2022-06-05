@@ -1,0 +1,44 @@
+
+div.full_width_textarea {
+    height:fit-content;
+    min-height: 6em;
+}
+
+.highlight_ {
+    color: #FF0000;
+}
+
+.proper_highlight {
+    padding: 1px 2px;
+    border-radius: 3px;
+}
+
+.proper_highlight:after {
+    content: "}}";
+}
+
+.highlight_kw {
+    background-color: rgba(149, 41, 138, 0.5);
+    color:rgb(255, 140, 243);
+}
+
+.highlight_kw:before {
+    content: "{{KW:";
+}
+
+.highlight_ability {
+    background-color: rgba(22, 100, 217, 0.5);
+    color:rgb(0, 230, 230);
+}
+
+.highlight_ability:before {
+    content: "{{ABILITY:";
+}
+
+.highlight_talent {
+    color:gold;
+}
+
+.highlight_card {
+    color:rgb(34, 184, 27);
+}
