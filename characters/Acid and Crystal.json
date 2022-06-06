@@ -1,0 +1,135 @@
+{
+    "name": "Acid and Crystal",
+    "role": "unknown",
+    "health": "1800/2100",
+    "speed": 370,
+    "origin": "- Crystal and Acid's relationship, and how they always joke that they are \"one\".",
+    "bio": "",
+    "personality": "",
+    "appearance": "",
+    "other_info": "",
+    "abilities": [{
+            "name": "Fusion Couple",
+            "image": "img/abilities/skill_01152.png",
+            "cooldown": 0,
+            "charges": 1,
+            "bind": "passive",
+            "description": "You are two characters in one. Both characters have their own, separate Health, Speed, Class and Death Timer.\nWhenever you would die, if the other character is alive, instantly use {{ABILITY:4}} or {{ABILITY:8}}, regardless of cooldown.\nThe inactive character heals at a rate of 400 Health per second.",
+            "hidden": false,
+            "stances": ["Acid", "Crystal"],
+            "details": ""
+        }, {
+            "name": "Acid Launcher",
+            "image": "img/abilities/skill_00002.png",
+            "cooldown": 0,
+            "charges": 1,
+            "bind": "primary",
+            "description": "A paint gun filled with Acid, continually shooting a stream of medium range acid (0.2 second of time between ticks). If it collides with an enemy, it covers them in acid, dealing 500 Damage over 4 seconds, fully stacking. If it collides with a floor first, it creates a small pool of acid on the floor, dealing the same amount of damage to enemies standing on it, lasting for 3 seconds.",
+            "hidden": false,
+            "stances": ["Acid"],
+            "details": "- Has an ammo count of 20 and a reload speed of 1.5 seconds."
+        }, {
+            "name": "Corrosive Shot",
+            "image": "img/abilities/skill_00005.png",
+            "cooldown": 8,
+            "charges": 1,
+            "bind": "secondary",
+            "description": "Shoot a strong, piercing bullet covered in acid, having unlimited range and piercing up to 3 enemy players and non-wall deployables, dealing 500 Damage instantly and then 500 Damage over 4 seconds. This ability deals 30% increased damage against enemies covered in acid. 75% of the damage dealt by this ability is given to Crystal as passive Health Regeneration, being consumed whenever necessary, at a maximum rate of 300 Health every second, when they are active next time.",
+            "hidden": false,
+            "stances": ["Acid"],
+            "details": ""
+        }, {
+            "name": "Fluid Dash",
+            "image": "img/abilities/skill_00013.png",
+            "cooldown": 6,
+            "charges": 2,
+            "bind": "ability1",
+            "description": "Dash in the direction you were going in, leaving behind a larger pool of acid while doing so.",
+            "hidden": false,
+            "stances": ["Acid"],
+            "details": ""
+        }, {
+            "name": "Swap to Crystal",
+            "image": "img/abilities/skill_00151.png",
+            "cooldown": 20,
+            "charges": 1,
+            "bind": "ability2",
+            "description": "Become {{KW:Ethereal}} for 2 seconds, during which you swap places with Crystal. Can only be used if Crystal is alive. This shares a cooldown with {{ABILITY:8}}.",
+            "hidden": false,
+            "stances": ["Acid"],
+            "details": ""
+        }, {
+            "name": "Crystal Sword",
+            "image": "img/abilities/skill_00168.png",
+            "cooldown": 0,
+            "charges": 1,
+            "bind": "primary",
+            "description": "A shiny sword made out of Crystals, dealing 500 Damage every 0.7 seconds at a melee range. If the sword breaks with this swing, it deals 200 more Damage.",
+            "hidden": false,
+            "stances": ["Crystal"],
+            "details": "- Has an ammo count of 5 and a reload time of 2 seconds.\n- The sword breaks with the swing that consumed the last ammo.\n- The reload animation is materializing a new sword (suggestions on specifics are welcome)"
+        }, {
+            "name": "Emerald Heart",
+            "image": "img/abilities/skill_00682.png",
+            "cooldown": 4,
+            "charges": 1,
+            "bind": "secondary",
+            "description": "Heal an ally for 450 instantly. If it actually healed the target for at least 200 Health, give Acid a 100-Health Frontal Shield, through which they can use any ability, for the first 10 seconds for when they become active next time. This shield stacks for up to 600 Health.",
+            "hidden": false,
+            "stances": ["Crystal"],
+            "details": ""
+        }, {
+            "name": "Diamond Block",
+            "image": "img/abilities/skill_00089.png",
+            "cooldown": 9,
+            "charges": 1,
+            "bind": "ability1",
+            "description": "Become {{KW:Invulnerable}} for 3 seconds. Whenever you take Damage, increase this ability's active duration by 0.3 seconds (0.5 second internal cooldown). You can move around freely, but cannot use another ability during this ability. Can be canceled early.",
+            "hidden": false,
+            "stances": ["Crystal"],
+            "details": ""
+        }, {
+            "name": "Swap to Acid",
+            "image": "img/abilities/skill_00007.png",
+            "cooldown": 20,
+            "charges": 1,
+            "bind": "ability2",
+            "description": "Become {{KW:Ethereal}} for 2 seconds, during which you swap places with Acid. Can only be used if Acid is alive. This shares a cooldown with {{ABILITY:4}}.",
+            "hidden": false,
+            "stances": ["Crystal"],
+            "details": ""
+        }, {
+            "name": "Crystal Downpour",
+            "image": "img/abilities/skill_00086.png",
+            "cooldown": 0,
+            "charges": 1,
+            "bind": "ultimate",
+            "description": "Temporarily summon the inactive character, then both of you leap into the air, becoming {{KW:Invulnerable}} and {{KW:Immovable}}. Then for the next 6 seconds, you can stay in the air and freely move around. You can also shoot up to 20 bolts of Crystal-Acid hybrid bullets, one every 0.2 seconds, healing allies for 300 Health, then another 200 over 4 seconds and piercing them, and dealing 300 Damage to enemies, and another 250 over 4 seconds. When all of the shots were fired or the duration expires, the inactive character disappears and you drop down to the ground.",
+            "hidden": false,
+            "stances": ["Acid", "Crystal"],
+            "details": ""
+        }
+    ],
+    "talents": [{
+            "name": "Smooth Ricochet",
+            "image": "img/abilities/skill_00568_grey.png",
+            "cooldown": 0,
+            "description": "Acid becomes {{KW:Invulnerable}} for 1 second when using {{ABILITY:3}}. Crystal reflects 50% of the damage she receives during {{ABILITY:7}} back to the attacker.",
+            "details": ""
+        }, {
+            "name": "Impatient Desire",
+            "image": "img/abilities/skill_00603_grey.png",
+            "cooldown": 0,
+            "description": "Every 50 Healing Crystal does reduces the cooldown of {{ABILITY:8}} by 0.1 seconds. Every 50 Damage Acid does reduces the cooldown of {{ABILITY:4}} by 0.1 seconds.",
+            "details": ""
+        }, {
+            "name": "Safe Space",
+            "image": "img/abilities/skill_00633_grey.png",
+            "cooldown": 0,
+            "description": "{{ABILITY:9}} now only consumes 50% Ultimate Charge, but its Damage and Healing output is reduced by 40%.",
+            "details": ""
+        }
+    ],
+    "stances": ["Acid", "Crystal"],
+    "card_categories": []
+}

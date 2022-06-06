@@ -15,15 +15,18 @@ $.extend( $.i18n.parser.emitter, {
 	},
 	ability: function (nodes) {
 		var ability = char_data.abilities[nodes[0]];
-		return '<span class="ability_link" data-ability-id="' + nodes[0] + '">' + ability.name + '</span>';
+		var tooltipPortion = inTooltip ? "" : ('data-ability-id="' + nodes[0] + '"');
+		return `<span class="ability_link" ${tooltipPortion}>${ability.name}</span>`;
 	},
 	talent: function (nodes) {
 		var talent = char_data.talents[nodes[0]];
-		return '<span class="talent_link" data-talent-id="' + nodes[0] + '">' + talent.name + '</span>';
+		var tooltipPortion = inTooltip ? "" : ('data-talent-id="' + nodes[0] + '"');
+		return `<span class="talent_link" ${tooltipPortion}>${talent.name}</span>`;
 	},
 	card: function (nodes) {
 		var card = char_data.card_categories[Number(nodes[0])].cards[Number(nodes[1])];
-		return '<span class="card_link" data-category-id="' + nodes[0] + '" data-card-id="' + nodes[1] + '">' + card.name + '</span>';
+		var tooltipPortion = inTooltip ? "" : ('data-category-id="' + nodes[0] + '" data-card-id="' + nodes[1] + '"');
+		return `<span class="card_link" ${tooltipPortion}>${card.name}</span>`;
 	},
 	scale: function ( nodes ) {
 		var base = Number(nodes[0]);

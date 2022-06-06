@@ -1,1 +1,218 @@
-{"name":"Sophia","role":"damage","health":2500,"speed":380,"origin":"Liliya Reznya from MOONSHINE ANIMATIONS's Shrapnel series.","bio":"Once a proud wife and mother of two, Sophia lived a very boring, very happy life before the civil war . . .\n\nOnce that struck, however, it was very clear that they should flee somewhere safe so the kids aren't endangered.\nThey packed their things and went for the last secure train.\n\nHowever, Sophia's intention was a little different . . . \n\nShe packed up her husband and kids, gave them their luggage, and with one last hug and kiss pushed them into the train right before Sophia's last chance to reconsider her plan would start moving, bringing the ones she loved to safety.\n\nFor she realized that this was her calling.\nEven if she died, even if she would not be able to hold her family in her embrace, she decided to uphold order in the chaotic wasteland that was about to form her own way . . .\nAs well as save some other people in need, and keep them under her metaphorical wings.\n\nSince then, she swiftly gained the nickname \"Skullbuster Sophia\", and has made some friends as well.","personality":"- Basically the biggest shift between battle and casual.\n- She is usually very caring while casual.\n- Mommy vibes, but not in a sexual way.\n- Often doesn't understand jokes or pop culture references.\n\n- She is extremely fierce, deadly and sadistic in battle.\n- Will not hesitate to kill someone who is not innocent.\n- Extremely cold blooded and calculated.","appearance":"- Similar to Reznya.\n- Usually wears some sort of metal mask while in battle.\n- Torn, black/dark red coat/cape long enough to hide in.","other_info":"- Actual name: Sophia Ginger","abilities":[{"name":"Light Machine Gun","image":"https://webcdn.hirezstudios.com/paladins/champion-abilities/assault-rifle.jpg","cooldown":0,"charges":1,"bind":"primary","description":"A Light Machine Gun that fires once every 0.1 seconds, dealing 85 damage per shot. Fully effective up to medium range.","hidden":false,"stances":[],"details":"- Has an ammo count of 40 and a reload time of 1.3 seconds."},{"name":"Poison-Coated Bullets","image":"https://webcdn.hirezstudios.com/paladins/champion-abilities/poison-bolts.jpg","cooldown":6,"charges":1,"bind":"secondary","description":"For the next 1.2 seconds your {{ABILITY:0}} will deal 70 damage per shot, but will apply a poison effect that deals 5% of the target's Maximum Health over 2 seconds. Shooting the same target multiple times refreshes the effect and stacks the damage (up to 8 times).","hidden":false,"stances":[],"details":""},{"name":"Combat Knife","image":"https://webcdn.hirezstudios.com/paladins/champion-abilities/counter.jpg","cooldown":8,"charges":1,"bind":"ability1","description":"Enter a defensive state using a combat knife, blocking off all damage upfront for 1.5 seconds, dealing 500 damage at melee range every time you do so. Canceling early will make you throw the knife, dealing up to 1000 damage at range based on the remaining duration.","hidden":false,"stances":[],"details":"- The melee strike's range is 20 units.\n- The maximum frequency of the melee strikes is once every 0.5 seconds."},{"name":"Bloodlust Dash","image":"https://webcdn.hirezstudios.com/paladins/champion-abilities/commanders-grab.jpg","cooldown":10,"charges":1,"bind":"ability2","description":"Dash Forward, catching the first enemy in your way and throwing them at the ground, dealing 600 damage and {{KW:Stun|3}} them for 1 second.","hidden":false,"stances":[],"details":"- Uncancelable."},{"name":"Heavy Rounds","image":"https://webcdn.hirezstudios.com/paladins/champion-abilities/headhunter.jpg","cooldown":0,"charges":1,"bind":"ultimate","description":"Change your weapon to a (insert weapon name here). While you have this equipped, your next 6 shots within 10 seconds will deal 700 damage each and will pierce 3 damageable enemy obstacles, but your weapon fire speed is 1 second. In addition, you have 30 {{KW:Slow}} for the duration.","hidden":false,"stances":[],"details":"- Cancelable\n- Cannot only use your Primary Fire for the duration. (?)\n- Consumes 40% Charge on activation, the rest is consumed with the shots."}],"talents":[{"name":"Escape Tool","image":"https://webcdn.hirezstudios.com/paladins/champion-legendaries-badge/vortex-grip.png","cooldown":0,"description":"{{ABILITY:3}} gains a second charge and has its cooldown reduced by 5 seconds, but it no longer does anything on collision with an enemy.","details":""},{"name":"Twisted Sadism","image":"https://webcdn.hirezstudios.com/paladins/champion-legendaries-badge/snack-attack.png","cooldown":0,"description":"30% of the damage done by the poison effect of {{ABILITY:1}} will be healed to both you and another ally with the most missing health.","details":""},{"name":"Hardened Steel","image":"https://webcdn.hirezstudios.com/paladins/champion-legendaries-badge/godslayer.png","cooldown":0,"description":"The knife is also thrown when {{ABILITY:2}}'s duration expires. The thrown knife now deals 400 Damage and an additional 75% of the damage negated by the ability.","details":""}],"stances":[""],"card_categories":[{"name":"Light Machine Gun","image":"https://webcdn.hirezstudios.com/paladins/champion-abilities/assault-rifle.jpg","cards":[{"name":"Sadism","image":"https://webcdn.hirezstudios.com/paladins/champion-cards/drain-life.jpg","description":"You have +{{SCALE:5|5}} {{KW:Lifesteal}}.","cost":0,"max_level":5,"cooldown":0},{"name":"Tough Vest","image":"https://webcdn.hirezstudios.com/paladins/champion-cards/flak-jacket.jpg","description":"You have +{{SCALE:50|50}} Maximum Health.","cost":0,"max_level":5,"cooldown":0},{"name":"Mission Complete","image":"https://webcdn.hirezstudios.com/paladins/champion-cards/snap-to-it.jpg","description":"Getting an Elimination reduces your active cooldowns by {{SCALE:10|10}}%.","cost":0,"max_level":5,"cooldown":0},{"name":"Scavenging","image":"https://webcdn.hirezstudios.com/paladins/champion-cards/by-my-will.jpg","description":"Getting an Elimination grants you 15 Ammo every 0.5 seconds for the next {{SCALE:0.5|0.5}} seconds. This effects stacks in duration.","cost":0,"max_level":5,"cooldown":0}]},{"name":"Poison-Coated Bullets","image":"https://webcdn.hirezstudios.com/paladins/champion-abilities/poison-bolts.jpg","cards":[{"name":"Potent Poison","image":"https://webcdn.hirezstudios.com/paladins/champion-cards/decrepify.jpg","description":"Enemies affected by {{ABILITY:1}} receive {{SCALE:5|5}}% less healing while they are poisoned.","cost":0,"max_level":5,"cooldown":0},{"name":"Guns Ablaze","image":"https://webcdn.hirezstudios.com/paladins/champion-cards/spiteful.jpg","description":"Activating {{ABILITY:1}} makes you not consume ammo for {{SCALE:0.4|0.4}} seconds.","cost":0,"max_level":3,"cooldown":0},{"name":"Poison Reserves","image":"https://webcdn.hirezstudios.com/paladins/champion-cards/fuel-for-the-fire.jpg","description":"Increase the duration of {{ABILITY:1}} by {{SCALE:0.1|0.1}} seconds.","cost":0,"max_level":4,"cooldown":0},{"name":"Weakening Substance","image":"https://webcdn.hirezstudios.com/paladins/champion-cards/quick-smoker.jpg","description":"Enemies affected by {{ABILITY:1}} receive +{{SCALE:4|4}}% {{KW:Slow}}. This effect doesn't stack.","cost":0,"max_level":5,"cooldown":0}]},{"name":"Combat Knife","image":"https://webcdn.hirezstudios.com/paladins/champion-abilities/counter.jpg","cards":[{"name":"Prolonged Guarantee","image":"https://webcdn.hirezstudios.com/paladins/champion-cards/malice.jpg","description":"Increase the duration of {{ABILITY:2}} by {{SCALE:0.4|0.4}} seconds.","cost":0,"max_level":5,"cooldown":0},{"name":"Target Practice","image":"https://webcdn.hirezstudios.com/paladins/champion-cards/embers.jpg","description":"If you throw {{ABILITY:2}} and it hits an enemy, reduce its cooldown by {{SCALE:0.8|0.8}} seconds.","cost":0,"max_level":5,"cooldown":0},{"name":"Equivelant Exchange","image":"https://webcdn.hirezstudios.com/paladins/champion-cards/equivalent-exchange.jpg","description":"Heal yourself by {{SCALE:6|6}}% of the damage you negated with {{ABILITY:2}}.","cost":0,"max_level":5,"cooldown":0},{"name":"Surrounded","image":"https://webcdn.hirezstudios.com/paladins/champion-cards/power-of-the-abyss.jpg","description":"Gain {{SCALE:8|8}} {{KW:Armor}} while {{ABILITY:2}} is active.","cost":0,"max_level":5,"cooldown":0}]},{"name":"Bloodlust Dash","image":"https://webcdn.hirezstudios.com/paladins/champion-abilities/commanders-grab.jpg","cards":[{"name":"Propel","image":"https://webcdn.hirezstudios.com/paladins/champion-cards/failsafe.jpg","description":"Increase the dash distance of {{ABILITY:3}} by {{SCALE:6|6}}%.","cost":0,"max_level":5,"cooldown":0},{"name":"Wreak Havoc","image":"https://webcdn.hirezstudios.com/paladins/champion-cards/furious-charge.jpg","description":"Hitting someone with {{ABILITY:3}} reduces {{ABILITY:1}} and {{ABILITY:2}}'s cooldown by {{SCALE:0.5|0.5}} seconds.","cost":0,"max_level":5,"cooldown":0},{"name":"Intimidation","image":"https://webcdn.hirezstudios.com/paladins/champion-cards/close-and-personal.jpg","description":"Increase the {{KW:Stun}} duration of {{ABILITY:3}} by {{SCALE:0.1|0.1}} seconds.","cost":0,"max_level":5,"cooldown":0},{"name":"Retreat","image":"https://webcdn.hirezstudios.com/paladins/champion-cards/fervor.jpg","description":"Reduce {{ABILITY:3}}'s cooldown by {{SCALE:0.6|0.6}} seconds whenever it doesn't {{KW:Stun}} an enemy.","cost":0,"max_level":5,"cooldown":0}]}]}
+{
+    "name": "Sophia",
+    "role": "damage",
+    "health": 2500,
+    "speed": 380,
+    "origin": "Liliya Reznya from MOONSHINE ANIMATIONS's Shrapnel series.",
+    "bio": "Once a proud wife and mother of two, Sophia lived a very boring, very happy life before the civil war . . .\n\nOnce that struck, however, it was very clear that they should flee somewhere safe so the kids aren't endangered.\nThey packed their things and went for the last secure train.\n\nHowever, Sophia's intention was a little different . . . \n\nShe packed up her husband and kids, gave them their luggage, and with one last hug and kiss pushed them into the train right before Sophia's last chance to reconsider her plan would start moving, bringing the ones she loved to safety.\n\nFor she realized that this was her calling.\nEven if she died, even if she would not be able to hold her family in her embrace, she decided to uphold order in the chaotic wasteland that was about to form her own way . . .\nAs well as save some other people in need, and keep them under her metaphorical wings.\n\nSince then, she swiftly gained the nickname \"Skullbuster Sophia\", and has made some friends as well.",
+    "personality": "- Basically the biggest shift between battle and casual.\n- She is usually very caring while casual.\n- Mommy vibes, but not in a sexual way.\n- Often doesn't understand jokes or pop culture references.\n\n- She is extremely fierce, deadly and sadistic in battle.\n- Will not hesitate to kill someone who is not innocent.\n- Extremely cold blooded and calculated.",
+    "appearance": "- Similar to Reznya.\n- Usually wears some sort of metal mask while in battle.\n- Torn, black/dark red coat/cape long enough to hide in.",
+    "other_info": "- Actual name: Sophia Ginger",
+    "abilities": [{
+            "name": "Light Machine Gun",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/assault-rifle.jpg",
+            "cooldown": 0,
+            "charges": 1,
+            "bind": "primary",
+            "description": "A Light Machine Gun that fires once every 0.1 seconds, dealing 85 damage per shot. Fully effective up to medium range.",
+            "hidden": false,
+            "stances": [],
+            "details": "- Has an ammo count of 40 and a reload time of 1.3 seconds."
+        }, {
+            "name": "Poison-Coated Bullets",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/poison-bolts.jpg",
+            "cooldown": 6,
+            "charges": 1,
+            "bind": "secondary",
+            "description": "For the next 1.2 seconds your {{ABILITY:0}} will deal 70 damage per shot, but will apply a poison effect that deals 5% of the target's Maximum Health over 2 seconds. Shooting the same target multiple times refreshes the effect and stacks the damage (up to 8 times).",
+            "hidden": false,
+            "stances": [],
+            "details": ""
+        }, {
+            "name": "Combat Knife",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/counter.jpg",
+            "cooldown": 8,
+            "charges": 1,
+            "bind": "ability1",
+            "description": "Enter a defensive state using a combat knife, blocking off all damage upfront for 1.5 seconds, dealing 500 damage at melee range every time you do so. Canceling early will make you throw the knife, dealing up to 1000 damage at range based on the remaining duration.",
+            "hidden": false,
+            "stances": [],
+            "details": "- The melee strike's range is 20 units.\n- The maximum frequency of the melee strikes is once every 0.5 seconds."
+        }, {
+            "name": "Bloodlust Dash",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/commanders-grab.jpg",
+            "cooldown": 10,
+            "charges": 1,
+            "bind": "ability2",
+            "description": "Dash Forward, catching the first enemy in your way and throwing them at the ground, dealing 600 damage and {{KW:Stun|3}} them for 1 second.",
+            "hidden": false,
+            "stances": [],
+            "details": "- Uncancelable."
+        }, {
+            "name": "Heavy Rounds",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/headhunter.jpg",
+            "cooldown": 0,
+            "charges": 1,
+            "bind": "ultimate",
+            "description": "Change your weapon to a (insert weapon name here). While you have this equipped, your next 6 shots within 10 seconds will deal 700 damage each and will pierce 3 damageable enemy obstacles, but your weapon fire speed is 1 second. In addition, you have 30 {{KW:Slow}} for the duration.",
+            "hidden": false,
+            "stances": [],
+            "details": "- Cancelable\n- Cannot only use your Primary Fire for the duration. (?)\n- Consumes 40% Charge on activation, the rest is consumed with the shots."
+        }
+    ],
+    "talents": [{
+            "name": "Escape Tool",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-legendaries-badge/vortex-grip.png",
+            "cooldown": 0,
+            "description": "{{ABILITY:3}} gains a second charge and has its cooldown reduced by 5 seconds, but it no longer does anything on collision with an enemy.",
+            "details": ""
+        }, {
+            "name": "Twisted Sadism",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-legendaries-badge/snack-attack.png",
+            "cooldown": 0,
+            "description": "30% of the damage done by the poison effect of {{ABILITY:1}} will be healed to both you and another ally with the most missing health.",
+            "details": ""
+        }, {
+            "name": "Hardened Steel",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-legendaries-badge/godslayer.png",
+            "cooldown": 0,
+            "description": "The knife is also thrown when {{ABILITY:2}}'s duration expires. The thrown knife now deals 400 Damage and an additional 75% of the damage negated by the ability.",
+            "details": ""
+        }
+    ],
+    "stances": [""],
+    "card_categories": [{
+            "name": "Light Machine Gun",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/assault-rifle.jpg",
+            "cards": [{
+                    "name": "Sadism",
+                    "image": "https://webcdn.hirezstudios.com/paladins/champion-cards/drain-life.jpg",
+                    "description": "You have +{{SCALE:5|5}} {{KW:Lifesteal}}.",
+                    "cost": 0,
+                    "max_level": 5,
+                    "cooldown": 0
+                }, {
+                    "name": "Tough Vest",
+                    "image": "https://webcdn.hirezstudios.com/paladins/champion-cards/flak-jacket.jpg",
+                    "description": "You have +{{SCALE:50|50}} Maximum Health.",
+                    "cost": 0,
+                    "max_level": 5,
+                    "cooldown": 0
+                }, {
+                    "name": "Mission Complete",
+                    "image": "https://webcdn.hirezstudios.com/paladins/champion-cards/snap-to-it.jpg",
+                    "description": "Getting an Elimination reduces your active cooldowns by {{SCALE:10|10}}%.",
+                    "cost": 0,
+                    "max_level": 5,
+                    "cooldown": 0
+                }, {
+                    "name": "Scavenging",
+                    "image": "https://webcdn.hirezstudios.com/paladins/champion-cards/by-my-will.jpg",
+                    "description": "Getting an Elimination grants you 15 Ammo every 0.5 seconds for the next {{SCALE:0.5|0.5}} seconds. This effects stacks in duration.",
+                    "cost": 0,
+                    "max_level": 5,
+                    "cooldown": 0
+                }
+            ]
+        }, {
+            "name": "Poison-Coated Bullets",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/poison-bolts.jpg",
+            "cards": [{
+                    "name": "Potent Poison",
+                    "image": "https://webcdn.hirezstudios.com/paladins/champion-cards/decrepify.jpg",
+                    "description": "Enemies affected by {{ABILITY:1}} receive {{SCALE:5|5}}% less healing while they are poisoned.",
+                    "cost": 0,
+                    "max_level": 5,
+                    "cooldown": 0
+                }, {
+                    "name": "Guns Ablaze",
+                    "image": "https://webcdn.hirezstudios.com/paladins/champion-cards/spiteful.jpg",
+                    "description": "Activating {{ABILITY:1}} makes you not consume ammo for {{SCALE:0.4|0.4}} seconds.",
+                    "cost": 0,
+                    "max_level": 3,
+                    "cooldown": 0
+                }, {
+                    "name": "Poison Reserves",
+                    "image": "https://webcdn.hirezstudios.com/paladins/champion-cards/fuel-for-the-fire.jpg",
+                    "description": "Increase the duration of {{ABILITY:1}} by {{SCALE:0.1|0.1}} seconds.",
+                    "cost": 0,
+                    "max_level": 4,
+                    "cooldown": 0
+                }, {
+                    "name": "Weakening Substance",
+                    "image": "https://webcdn.hirezstudios.com/paladins/champion-cards/quick-smoker.jpg",
+                    "description": "Enemies affected by {{ABILITY:1}} receive +{{SCALE:4|4}}% {{KW:Slow}}. This effect doesn't stack.",
+                    "cost": 0,
+                    "max_level": 5,
+                    "cooldown": 0
+                }
+            ]
+        }, {
+            "name": "Combat Knife",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/counter.jpg",
+            "cards": [{
+                    "name": "Prolonged Guarantee",
+                    "image": "https://webcdn.hirezstudios.com/paladins/champion-cards/malice.jpg",
+                    "description": "Increase the duration of {{ABILITY:2}} by {{SCALE:0.4|0.4}} seconds.",
+                    "cost": 0,
+                    "max_level": 5,
+                    "cooldown": 0
+                }, {
+                    "name": "Target Practice",
+                    "image": "https://webcdn.hirezstudios.com/paladins/champion-cards/embers.jpg",
+                    "description": "If you throw {{ABILITY:2}} and it hits an enemy, reduce its cooldown by {{SCALE:0.8|0.8}} seconds.",
+                    "cost": 0,
+                    "max_level": 5,
+                    "cooldown": 0
+                }, {
+                    "name": "Equivelant Exchange",
+                    "image": "https://webcdn.hirezstudios.com/paladins/champion-cards/equivalent-exchange.jpg",
+                    "description": "Heal yourself by {{SCALE:6|6}}% of the damage you negated with {{ABILITY:2}}.",
+                    "cost": 0,
+                    "max_level": 5,
+                    "cooldown": 0
+                }, {
+                    "name": "Surrounded",
+                    "image": "https://webcdn.hirezstudios.com/paladins/champion-cards/power-of-the-abyss.jpg",
+                    "description": "Gain {{SCALE:8|8}} {{KW:Armor}} while {{ABILITY:2}} is active.",
+                    "cost": 0,
+                    "max_level": 5,
+                    "cooldown": 0
+                }
+            ]
+        }, {
+            "name": "Bloodlust Dash",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/commanders-grab.jpg",
+            "cards": [{
+                    "name": "Propel",
+                    "image": "https://webcdn.hirezstudios.com/paladins/champion-cards/failsafe.jpg",
+                    "description": "Increase the dash distance of {{ABILITY:3}} by {{SCALE:6|6}}%.",
+                    "cost": 0,
+                    "max_level": 5,
+                    "cooldown": 0
+                }, {
+                    "name": "Wreak Havoc",
+                    "image": "https://webcdn.hirezstudios.com/paladins/champion-cards/furious-charge.jpg",
+                    "description": "Hitting someone with {{ABILITY:3}} reduces {{ABILITY:1}} and {{ABILITY:2}}'s cooldown by {{SCALE:0.5|0.5}} seconds.",
+                    "cost": 0,
+                    "max_level": 5,
+                    "cooldown": 0
+                }, {
+                    "name": "Intimidation",
+                    "image": "https://webcdn.hirezstudios.com/paladins/champion-cards/close-and-personal.jpg",
+                    "description": "Increase the {{KW:Stun}} duration of {{ABILITY:3}} by {{SCALE:0.1|0.1}} seconds.",
+                    "cost": 0,
+                    "max_level": 5,
+                    "cooldown": 0
+                }, {
+                    "name": "Retreat",
+                    "image": "https://webcdn.hirezstudios.com/paladins/champion-cards/fervor.jpg",
+                    "description": "Reduce {{ABILITY:3}}'s cooldown by {{SCALE:0.6|0.6}} seconds whenever it doesn't {{KW:Stun}} an enemy.",
+                    "cost": 0,
+                    "max_level": 5,
+                    "cooldown": 0
+                }
+            ]
+        }
+    ]
+}

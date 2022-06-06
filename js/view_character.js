@@ -29,6 +29,10 @@ function GoToViewCharacterScreen(char_name) {
 	ViewCharacterPage(char_name);
 }
 
+function addAllTypingElements(text) {
+	return text.replaceAll("\n", "<br>").replaceAll("\t", "&nbsp;&nbsp;&nbsp;&nbsp;");
+}
+
 function ViewCharacterPage(char_name) {
 	$("title").html(char_name + " - Character Viewer!");
 	$("#characterSelection").addClass("hidden");
@@ -141,9 +145,9 @@ function DisplayAbility(ability, parent) {
 		clone.find(".ability_charges").html(ability.charges + " " + icons.charges);
 	}
 	clone.find(".ability_bind").html(binds[ability.bind]);
-	clone.find(".ability_description").html($.i18n(ability.description));
+	clone.find(".ability_description").html(addAllTypingElements($.i18n(ability.description)));
 	if (ability.details.length > 0) {
-		clone.find(".ability_details").html($.i18n(ability.details).replaceAll('\n', '<br>'));
+		clone.find(".ability_details").html(addAllTypingElements($.i18n(ability.details)));
 	} else {
 		clone.find(".ability_details_label").addClass("hidden");
 	}
@@ -156,8 +160,14 @@ function DisplayAbility(ability, parent) {
 	return clone;
 }
 
+var inTooltip = false;
+
 function AddAbilityTooltips(clone) {
+	inTooltip = true;
 	clone.find(".ability_link").each(function (i, e) {
+		if (!e.hasAttribute("data-ability-id")) {
+			return;
+		}
 		var ability = char_data.abilities[Number(e.getAttribute("data-ability-id"))];
 		var template = '<div class=\'tooltip ability_tooltip\'><div class=\'tooltip-arrow\'></div><div class=\'tooltip-inner\'></div></div>';
 		var dummy = $('<div></div>');
@@ -167,6 +177,7 @@ function AddAbilityTooltips(clone) {
 			template: template
 		});
 	})
+	inTooltip = false;
 }
 
 function DisplayTalent(talent, parent) {
@@ -175,9 +186,9 @@ function DisplayTalent(talent, parent) {
 	if (talent.cooldown > 0) {
 		clone.find(".talent_cooldown").html(talent.cooldown + " " + icons.cooldown);
 	}
-	clone.find(".talent_description").html($.i18n(talent.description));
+	clone.find(".talent_description").html(addAllTypingElements($.i18n(talent.description)));
 	if (talent.details.length > 0) {
-		clone.find(".talent_details").html($.i18n(talent.details).replaceAll('\n', '<br>'));
+		clone.find(".talent_details").html(addAllTypingElements($.i18n(talent.details)));
 	} else {
 		clone.find(".talent_details_label").addClass("hidden");
 	}
@@ -191,7 +202,11 @@ function DisplayTalent(talent, parent) {
 }
 
 function AddTalentTooltips(clone) {
+	inTooltip = true;
 	clone.find(".talent_link").each(function (i, e) {
+		if (!e.hasAttribute("data-talent-id")) {
+			return;
+		}
 		var talent = char_data.talents[Number(e.getAttribute("data-talent-id"))];
 		var template = '<div class=\'tooltip talent_tooltip\'><div class=\'tooltip-arrow\'></div><div class=\'tooltip-inner\'></div></div>';
 		var dummy = $('<div></div>');
@@ -202,6 +217,7 @@ function AddTalentTooltips(clone) {
 			template: template
 		});
 	})
+	inTooltip = false;
 }
 
 var card_level = 1; // Global card level
@@ -237,7 +253,7 @@ function DisplayCard(card, parent, level) {
 	max_card_level = Math.max(card.max_level, max_card_level);
 	clone.find(".card_name").html(card.name);
 	clone.find(".card_image").css("background-image", 'url("' + card.image + '")');
-	clone.find(".card_description").html($.i18n(card.description));
+	clone.find(".card_description").html(addAllTypingElements($.i18n(card.description)));
 	clone.find(".card_cost").html( (card.cost > 0 ? card.cost*current_card_level : '???') + ' ' + icons.cost);
 	//console.log(card_level, current_card_level, max_card_level);
 	card.cooldown = card.cooldown || 0;
@@ -258,7 +274,11 @@ function DisplayCard(card, parent, level) {
 }
 
 function AddCardTooltips(clone) {
+	inTooltip = true;
 	clone.find(".card_link").each(function (i, e) {
+		if (!e.hasAttribute("data-card-id")) {
+			return;
+		}
 		var card = char_data.card_categories[Number(e.getAttribute("data-category-id"))].cards[Number(e.getAttribute("data-card-id"))];
 		var template = '<div class=\'tooltip card_tooltip\'><div class=\'tooltip-arrow\'></div><div class=\'tooltip-inner\'></div></div>';
 		var dummy = $('<div></div>');
@@ -269,6 +289,7 @@ function AddCardTooltips(clone) {
 			template: template
 		});
 	})
+	inTooltip = false;
 }
 
 function ToggleDetails(e) {

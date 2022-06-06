@@ -1,1 +1,125 @@
-{"name":"Cigamal","role":"flank","health":2000,"speed":300,"origin":"Inspiration: The concept of Magical Girl Site (haven't watched it yet)","bio":"Working as an upholder of justice in the Magical Girl Police, she date it her mission daily to keep everyone, including her colleagues safe. \nOne day, however, her best friend from work got greatly injured, and needed surgery. \nSince then, not only was Cigamal not allowed to see her friend's recovery, but everyone slowly started acting strange. \nBeing scared, she tried running away, and sure enough, her former co-workers and friends chased after her with murderous intent.\n\nAfter a long chase, Cigamal finally lost them . . . But then was found by another group.","personality":"- Serious and fierce, but in a more magical girl style way on the battlefield.\n- Calls her teammates \"friends\" . . . ?\n- Can be casual, but in story mode she is often found stressing over her past colleagues.","appearance":"Gunslinger Form:\n- Black. Black. All the black.\n- Slightly torn, weathered clothes.\n\nMagical Girl Form:\n- A weathered set of Sailor Moon clothes, pretty much.\n- Vibrant colors that match either her eye color or her hair color.","other_info":"- The character from which I started the story from, but Loney is the first character in the code.","abilities":[{"name":"Heavy Pistols","image":"https://webcdn.hirezstudios.com/paladins/champion-abilities/magnums.jpg","cooldown":0,"charges":1,"bind":"primary","description":"A pair of pistols that fire once every 0.8 seconds, dealing 750 damage. Fully effective at close range. Effective up to medium range.","hidden":false,"stances":["Gunslinger Mode"],"details":"- Has an ammo count of 4 and a reload speed of 1 second."},{"name":"Taser Bullet","image":"https://webcdn.hirezstudios.com/paladins/champion-abilities/net-shot.jpg","cooldown":6,"charges":1,"bind":"secondary","description":"Your next weapon shot will {{KW:Cripple}} it's victim for 2 seconds, but consumes double ammo. If the target is affected by Call of the Shadows, {{KW:Silence}} them for 1.5 seconds instead.","hidden":false,"stances":["Gunslinger Mode"],"details":""},{"name":"Call of the Shadows","image":"https://webcdn.hirezstudios.com/paladins/champion-abilities/midnight.jpg","cooldown":7,"charges":1,"bind":"ability1","description":"When activated, give all enemies within 100 units {{KW:Gloom}} for 3 seconds, restricting their vision to 45 units. In addition, gain 30 {{KW:Speed}} for 3 seconds. Using {{ABILITY:0}} or {{ABILITY:3}} will cancel this ability.","hidden":false,"stances":["Gunslinger Mode"],"details":""},{"name":"Pretty Staff","image":"https://webcdn.hirezstudios.com/paladins/champion-abilities/pyre-blade.jpg","cooldown":2,"charges":1,"bind":"ability2","description":"Holster your Pistols and grab your Magical Girl Staff, going into Magical Girl Mode.","hidden":false,"stances":["Gunslinger Mode"],"details":""},{"name":"Pretty Staff Strike","image":"https://webcdn.hirezstudios.com/paladins/champion-abilities/pyre-blade.jpg","cooldown":0,"charges":1,"bind":"primary","description":"A staff decorated with vibrant, pink and white colors, dealing 700 damage every 0.5 seconds at Melee Range.","hidden":false,"stances":["Magical Girl Mode"],"details":"- Has no ammo count, nor reload."},{"name":"Slowing of Justice","image":"https://webcdn.hirezstudios.com/paladins/champion-abilities/dead-zone.jpg","cooldown":9,"charges":1,"bind":"secondary","description":"After a 0.6 second wind-up, fire a heart that explodes on contact with a surface, dealing 200 Damage and giving all enemies inside it 40 {{KW:Slow}}. Lasts for 5 seconds.","hidden":false,"stances":["Magical Girl Mode"],"details":""},{"name":"Graceful Leap","image":"https://webcdn.hirezstudios.com/paladins/champion-abilities/heroic-leap.jpg","cooldown":7,"charges":1,"bind":"ability1","description":"Throw your staff forward, passing through enemies and dealing 300 Damage. After that Leap towards your Staff to grab it.","hidden":false,"stances":["Magical Girl Mode"],"details":"- Cannot activate another ability for the duration and cannot be canceled.\n- If the ability is interrupted, Cigamal will telekinetically grab the staff as soon as she can."},{"name":"Heavy Pistols","image":"https://webcdn.hirezstudios.com/paladins/champion-abilities/magnums.jpg","cooldown":2,"charges":1,"bind":"ability2","description":"Holster your Magical Girl Staff and grab your Heavy Pistols, going into Gunslinger Mode.","hidden":false,"stances":["Magical Girl Mode"],"details":""},{"name":"Heart of Doom","image":"https://webcdn.hirezstudios.com/paladins/champion-abilities/wings-of-wrath.jpg","cooldown":0,"charges":1,"bind":"ultimate","description":"Fuse your Magical Girl Staff with your Heavy Pistols to make your next weapon shot a Huge Heart that explodes on impact, dealing 1000 Damage, Knocking Back and {{KW:Stun|3}} enemies for 1 second.","hidden":false,"stances":["Gunslinger Mode","Magical Girl Mode"],"details":"- Fusing the weapons takes 1 second.\n- Cannot use another ability until the upgraded shot has been used.\n- Uncancelable.\n- Dying before shooting the upgraded shot will refund 30% of your Ultimate."}],"talents":[{"name":"Love's Execution","image":"https://webcdn.hirezstudios.com/paladins/champion-legendaries-badge/exterminate.png","cooldown":0,"description":"{{ABILITY:8}} now instantly executes the enemy directly hit by it and the Projectile travels at 200% Speed, but it no longer {{KW:Stun|4}} or Knocks Back enemies.","details":""},{"name":"Just Revenge","image":"https://webcdn.hirezstudios.com/paladins/champion-legendaries-badge/stunning-visage.png","cooldown":0,"description":"You have 20 {{KW:Lifesteal}} and 20% increased Weapon Damage while at or below 40% Health.","details":""},{"name":"Grand Entrance","image":"https://webcdn.hirezstudios.com/paladins/champion-legendaries-badge/bounce-house.png","cooldown":0,"description":"Your first two Weapon Shots within 2 seconds of {{ABILITY:2}} ended will deal 20% Increased Damage and have 50 {{KW:Lifesteal}}. Become {{KW:Immovable}} and have 60 {{KW:Armor}} while Leaping with {{ABILITY:6}}.","details":""}],"stances":["Gunslinger Mode","Magical Girl Mode"],"card_categories":[]}
+{
+    "name": "Cigamal",
+    "role": "flank",
+    "health": 2000,
+    "speed": 300,
+    "origin": "Inspiration: The concept of Magical Girl Site (haven't watched it yet)",
+    "bio": "Working as an upholder of justice in the Magical Girl Police, she date it her mission daily to keep everyone, including her colleagues safe. \nOne day, however, her best friend from work got greatly injured, and needed surgery. \nSince then, not only was Cigamal not allowed to see her friend's recovery, but everyone slowly started acting strange. \nBeing scared, she tried running away, and sure enough, her former co-workers and friends chased after her with murderous intent.\n\nAfter a long chase, Cigamal finally lost them . . . But then was found by another group.",
+    "personality": "- Serious and fierce, but in a more magical girl style way on the battlefield.\n- Calls her teammates \"friends\" . . . ?\n- Can be casual, but in story mode she is often found stressing over her past colleagues.",
+    "appearance": "Gunslinger Form:\n- Black. Black. All the black.\n- Slightly torn, weathered clothes.\n\nMagical Girl Form:\n- A weathered set of Sailor Moon clothes, pretty much.\n- Vibrant colors that match either her eye color or her hair color.",
+    "other_info": "- The character from which I started the story from, but Loney is the first character in the code.",
+    "abilities": [{
+            "name": "Heavy Pistols",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/magnums.jpg",
+            "cooldown": 0,
+            "charges": 1,
+            "bind": "primary",
+            "description": "A pair of pistols that fire once every 0.8 seconds, dealing 750 damage. Fully effective at close range. Effective up to medium range.",
+            "hidden": false,
+            "stances": ["Gunslinger Mode"],
+            "details": "- Has an ammo count of 4 and a reload speed of 1 second."
+        }, {
+            "name": "Taser Bullet",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/net-shot.jpg",
+            "cooldown": 6,
+            "charges": 1,
+            "bind": "secondary",
+            "description": "Your next weapon shot will {{KW:Cripple}} it's victim for 2 seconds, but consumes double ammo. If the target is affected by Call of the Shadows, {{KW:Silence}} them for 1.5 seconds instead.",
+            "hidden": false,
+            "stances": ["Gunslinger Mode"],
+            "details": ""
+        }, {
+            "name": "Call of the Shadows",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/midnight.jpg",
+            "cooldown": 7,
+            "charges": 1,
+            "bind": "ability1",
+            "description": "When activated, give all enemies within 100 units {{KW:Gloom}} for 3 seconds, restricting their vision to 45 units. In addition, gain 30 {{KW:Speed}} for 3 seconds. Using {{ABILITY:0}} or {{ABILITY:3}} will cancel this ability.",
+            "hidden": false,
+            "stances": ["Gunslinger Mode"],
+            "details": ""
+        }, {
+            "name": "Pretty Staff",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/pyre-blade.jpg",
+            "cooldown": 2,
+            "charges": 1,
+            "bind": "ability2",
+            "description": "Holster your Pistols and grab your Magical Girl Staff, going into Magical Girl Mode.",
+            "hidden": false,
+            "stances": ["Gunslinger Mode"],
+            "details": ""
+        }, {
+            "name": "Pretty Staff Strike",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/pyre-blade.jpg",
+            "cooldown": 0,
+            "charges": 1,
+            "bind": "primary",
+            "description": "A staff decorated with vibrant, pink and white colors, dealing 700 damage every 0.5 seconds at Melee Range.",
+            "hidden": false,
+            "stances": ["Magical Girl Mode"],
+            "details": "- Has no ammo count, nor reload."
+        }, {
+            "name": "Slowing of Justice",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/dead-zone.jpg",
+            "cooldown": 9,
+            "charges": 1,
+            "bind": "secondary",
+            "description": "After a 0.6 second wind-up, fire a heart that explodes on contact with a surface, dealing 200 Damage and giving all enemies inside it 40 {{KW:Slow}}. Lasts for 5 seconds.",
+            "hidden": false,
+            "stances": ["Magical Girl Mode"],
+            "details": ""
+        }, {
+            "name": "Graceful Leap",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/heroic-leap.jpg",
+            "cooldown": 7,
+            "charges": 1,
+            "bind": "ability1",
+            "description": "Throw your staff forward, passing through enemies and dealing 300 Damage. After that Leap towards your Staff to grab it.",
+            "hidden": false,
+            "stances": ["Magical Girl Mode"],
+            "details": "- Cannot activate another ability for the duration and cannot be canceled.\n- If the ability is interrupted, Cigamal will telekinetically grab the staff as soon as she can."
+        }, {
+            "name": "Heavy Pistols",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/magnums.jpg",
+            "cooldown": 2,
+            "charges": 1,
+            "bind": "ability2",
+            "description": "Holster your Magical Girl Staff and grab your Heavy Pistols, going into Gunslinger Mode.",
+            "hidden": false,
+            "stances": ["Magical Girl Mode"],
+            "details": ""
+        }, {
+            "name": "Heart of Doom",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-abilities/wings-of-wrath.jpg",
+            "cooldown": 0,
+            "charges": 1,
+            "bind": "ultimate",
+            "description": "Fuse your Magical Girl Staff with your Heavy Pistols to make your next weapon shot a Huge Heart that explodes on impact, dealing 1000 Damage, Knocking Back and {{KW:Stun|3}} enemies for 1 second.",
+            "hidden": false,
+            "stances": ["Gunslinger Mode", "Magical Girl Mode"],
+            "details": "- Fusing the weapons takes 1 second.\n- Cannot use another ability until the upgraded shot has been used.\n- Uncancelable.\n- Dying before shooting the upgraded shot will refund 30% of your Ultimate."
+        }
+    ],
+    "talents": [{
+            "name": "Love's Execution",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-legendaries-badge/exterminate.png",
+            "cooldown": 0,
+            "description": "{{ABILITY:8}} now instantly executes the enemy directly hit by it and the Projectile travels at 200% Speed, but it no longer {{KW:Stun|4}} or Knocks Back enemies.",
+            "details": ""
+        }, {
+            "name": "Just Revenge",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-legendaries-badge/stunning-visage.png",
+            "cooldown": 0,
+            "description": "You have 20 {{KW:Lifesteal}} and 20% increased Weapon Damage while at or below 40% Health.",
+            "details": ""
+        }, {
+            "name": "Grand Entrance",
+            "image": "https://webcdn.hirezstudios.com/paladins/champion-legendaries-badge/bounce-house.png",
+            "cooldown": 0,
+            "description": "Your first two Weapon Shots within 2 seconds of {{ABILITY:2}} ended will deal 20% Increased Damage and have 50 {{KW:Lifesteal}}. Become {{KW:Immovable}} and have 60 {{KW:Armor}} while Leaping with {{ABILITY:6}}.",
+            "details": ""
+        }
+    ],
+    "stances": ["Gunslinger Mode", "Magical Girl Mode"],
+    "card_categories": []
+}
