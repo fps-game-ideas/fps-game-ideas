@@ -63,7 +63,7 @@
             "image": "img/abilities/skill_00562.png",
             "cooldown": 0,
             "charges": 1,
-            "bind": "passive",
+            "bind": "ultimate",
             "description": "For the next 3 seconds everyone is {{KW:Fixation|2}} on you, and your Primary Fire becomes {{ABILITY:6}}.",
             "hidden": true,
             "stances": [],
