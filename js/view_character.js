@@ -74,10 +74,12 @@ function GetCharacterJSON(name) {
 		$("#character_role").html(roles[data.role]);
 		$("#character_heath").html(data.health);
 		$("#character_speed").html(data.speed);
+		$(".bio_point").addClass("hidden");
 		for (var i=0; i < bio_points.length; i++) {
 			var point = bio_points[i];
 			if (data[point] && data[point].length > 0) {
 				$("#character_" + point).html(data[point].replaceAll('\n', '<br>'));
+				$("#character_" + point + "_header").removeClass("hidden");
 			} else {
 				$("#character_" + point + "_header").addClass("hidden");
 			}
