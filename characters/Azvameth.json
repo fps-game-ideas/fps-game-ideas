@@ -1,1 +1,121 @@
-{"name":"Azvameth","role":"flank","health":"2300","speed":"310","origin":"- From Previous version, Betty from Camila Cuevas's Glitchtale. This was also made right before Vora's release, as a test to see if I could guess how Vora would work like.\n- Renzan also helped with ideas.","bio":"[Possessed Kid]'s Big Sister. Her parents always stressed her, too, and thus she often lashed out towards her little brother, too, because of that.\nOne day, however, a terrible car accident took her life at the age of 17(?).\nSince then, she has been living in hell for years, and has worked hard to climb up the ranks and become the wife of the Incubus Prince.\n\nHowever, her interests were mostly to become more and more powerful, unlike her more passive husband.\n\nAnd her plan to achieve that is to take her little brother's soul . . .","personality":"- Crude, harsh\n- Always wants to dominate and rule over others\n- Regards her husband as nothing more than a battery\n- Only talks sweetly when she wants something and tries to be manipulative\n- Exhibited similar behavior before becoming a demon as well, but much less noticeable","appearance":"- Worn, but not sexualized armor\n- Blood in a lot of places\n- Maybe a knife is stuck to her back, but she left it in cuz it's badass?","other_info":"","abilities":[{"name":"Obsession Overdrive","image":"img/abilities/skill_00576.png","cooldown":5,"charges":1,"bind":"passive","description":"The first enemy player you hit with {{ABILITY:1}} is now marked as your \"Obsession Target\" for the next 5 seconds. Every time you damage your Obsession Target (except Damage over Time effects), you gain an Obsession Stack, up to 10 Stacks. If your Obsession Target dies, you get 4 additional Stacks. Each Stack increases the damage of every non-Ultimate ability by 5%. While you're Out of Combat, you lose a Stack every 0.5 seconds. All stacks are lost on death.","hidden":false,"stances":[],"details":""},{"name":"Hellclaw Scythe","image":"img/abilities/skill_00141.png","cooldown":0,"charges":1,"bind":"primary","description":"A Scythe made out of a hellbeast's Claws, dealing 450 Damage every 0.5 seconds at melee range. Swinging while not damaging an enemy player will result in 50% Self-Damage being applied.","hidden":false,"stances":[],"details":""},{"name":"Purge with Sin","image":"img/abilities/skill_00142.png","cooldown":12,"charges":1,"bind":"secondary","description":"If you have 4 or less Stacks of Obsession, leave a rune behind and your Primary Fire makes you dash forward instead for the duration. Hitting an enemy during a dash stops you in place and deals 400 Damage to them. If you don't hit an enemy along the way, this ability will be instantly canceled. After 3 dashes you teleport back to the rune. Can be reactivated to cancel early. You cannot use another ability for the duration.\n\nIf you have 5 or more Stacks of Obsession, consume 5 Stacks to swing your Scythe from below upwards, dealing 600 Damage to an enemy hit. If this hits an enemy player, become Invulnerable and Immovable for 2 seconds and launch them upwards a bit, Rooting them for 1 second.","hidden":false,"stances":[],"details":""},{"name":"Fearsome Presence","image":"img/abilities/skill_00255.png","cooldown":8,"charges":1,"bind":"ability1","description":"After a 1-second wind-up, teleport to the enemy you last hit with Hellclaw Scythe if they are nearby. The maximum distance of the teleport is increased by 10% for every Obsession Stack you have.","hidden":false,"stances":[],"details":""},{"name":"Hunting Instinct","image":"img/abilities/skill_00476.png","cooldown":9,"charges":1,"bind":"ability2","description":"Gain +25 {{KW:Speed}} for 4 seconds, during which your current or last Obsession Target will be {{KW:Reveal|2}} to you. You can re-activate this ability during its duration while facing a wall to make you hit it with your Scythe, after which you propel yourself upwards 60 units, but the ability will be canceled. If you have 4 or less Stacks of Obsession upon cast, holster your Scythe for the duration, being unable to use another ability for the duration, but having +20 Armor while it lasts. Activating an ability other than {{ABILITY:1}} cancels this ability.","hidden":false,"stances":[],"details":""},{"name":"Bloodbath Pirouette","image":"img/abilities/skill_00253.png","cooldown":0,"charges":1,"bind":"ultimate","description":"If you have an Obsession Target, start spinning with your Scythe out at a rapid speed, dealing 200 Damage every 0.2 seconds 3 times. \n\nIf all 3 shots did damage to your Obsession Target, hit them from below with your Scythe, dealing 500 Damage and sending them flying 100 units into the air.\n\n\tIf they are Immovable or otherwise could not have been lifted, that slice will deal an additional 500 Damage instead.\n\n\tIf they hit a ceiling (other than the skybox) before reaching that height, they get Stunned for 1.5 seconds and come crashing down to you.\n\n\tOtherwise, jump up to them and hit them from above for 600 initial Damage and another 400 Damage dealt as Bleed damage over 2 seconds, sending them crashing down onto the ground, then go down towards them.\n\nOtherwise, charge forward, dealing 300 Damage and dragging the first enemy player you come in contact with with you 60 units, being Invulnerable and Immovable while you do so.\n\nThe timer for how long a player is your target is paused during this ability's duration, regardless of circumstance.","hidden":false,"stances":[],"details":""}],"talents":[{"name":"Murder Machine","image":"img/abilities/skill_00476_grey.png","cooldown":0,"description":"You never holster your weapon when activating {{ABILITY:4}} and you always have the {{KW:Armor}} bonus during it. Scaling a wall with {{ABILITY:4}} now doesn't cancel the ability.","details":""},{"name":"Kept In Check","image":"img/abilities/skill_00255_grey.png","cooldown":0,"description":"{{ABILITY:3}} makes the target {{KW:Silence|2}} for 1 second upon teleporting.","details":""},{"name":"Sadistic Restoration","image":"img/abilities/skill_00142_grey.png","cooldown":0,"description":"Heal yourself by 100% of the Damage you deal during {{ABILITY:2}}.","details":""},{"name":"Anger Issues","image":"img/abilities/skill_00576_grey.png","cooldown":0,"description":"Your basic abilities charge 8% faster for every obsession stack you have.","details":""}],"stances":[""],"card_categories":[]}
+{
+    "name": "Azvameth",
+    "role": "flank",
+    "health": "2300",
+    "speed": "310",
+    "origin": "- From Previous version, Betty from Camila Cuevas's Glitchtale. This was also made right before Vora's release, as a test to see if I could guess how Vora would work like.\n- Renzan also helped with ideas.",
+    "bio": "[Possessed Kid]'s Big Sister. Her parents always stressed her, too, and thus she often lashed out towards her little brother, too, because of that.\nOne day, however, a terrible car accident took her life at the age of 17(?).\nSince then, she has been living in hell for years, and has worked hard to climb up the ranks and become the wife of the Incubus Prince.\n\nHowever, her interests were mostly to become more and more powerful, unlike her more passive husband.\n\nAnd her plan to achieve that is to take her little brother's soul . . .",
+    "personality": "- Crude, harsh\n- Always wants to dominate and rule over others\n- Regards her husband as nothing more than a battery\n- Only talks sweetly when she wants something and tries to be manipulative\n- Exhibited similar behavior before becoming a demon as well, but much less noticeable",
+    "appearance": "- Worn, but not sexualized armor\n- Blood in a lot of places\n- Maybe a knife is stuck to her back, but she left it in cuz it's badass?",
+    "other_info": "",
+    "abilities": [{
+            "name": "Obsession Overdrive",
+            "image": "img/abilities/skill_00576.png",
+            "cooldown": 5,
+            "charges": 1,
+            "bind": "passive",
+            "description": "The first enemy player you hit with {{ABILITY:1}} is now marked as your \"Obsession Target\" for the next 5 seconds. Every time you damage your Obsession Target (except Damage over Time effects), you gain an Obsession Stack, up to 10 Stacks. If your Obsession Target dies, you get 4 additional Stacks. Each Stack increases the damage of every non-Ultimate ability by 5%. While you're Out of Combat, you lose a Stack every 0.5 seconds. All stacks are lost on death.",
+            "hidden": false,
+            "stances": ["Normal Mode", "Marching Mode"],
+            "details": ""
+        }, {
+            "name": "Hellclaw Scythe",
+            "image": "img/abilities/skill_00141.png",
+            "cooldown": 0,
+            "charges": 1,
+            "bind": "primary",
+            "description": "A Scythe made out of a hellbeast's Claws, dealing 450 Damage every 0.5 seconds at melee range. Swinging while not damaging an enemy player will result in 50% Self-Damage being applied.",
+            "hidden": false,
+            "stances": ["Normal Mode"],
+            "details": ""
+        }, {
+            "name": "Dashing Slash",
+            "image": "img/abilities/skill_00141.png",
+            "cooldown": 0,
+            "charges": 1,
+            "bind": "primary",
+            "description": "Swing your {{ABILITY:1}} while dashing forward. Has the same properties as a regular swing, except you can only do it once every 0.8 seconds. You can use this up to three times during one cast of {{ABILITY:6}}. At the end of the third dash you cast {{ABILITY:4}}.",
+            "hidden": false,
+            "stances": ["Marching Mode"],
+            "details": ""
+        }, {
+            "name": "Double Scrapes",
+            "image": "img/abilities/skill_00142.png",
+            "cooldown": 7,
+            "charges": 1,
+            "bind": "secondary",
+            "description": "Swing your {{ABILITY:1}} twice in rapid succession for 50% reduced Damage, and the arc of these attacks is also reduced by 75%. If both of these hits damage your Obsession Target, your next swing within 2 seconds with {{ABILITY:1}} happens 50% faster.",
+            "hidden": false,
+            "stances": ["Normal Mode"],
+            "details": ""
+        }, {
+            "name": "Recall",
+            "image": "img/abilities/skill_00137.png",
+            "cooldown": 0,
+            "charges": 1,
+            "bind": "secondary",
+            "description": "Teleport back to your rune and cancel {{ABILITY:6}}.",
+            "hidden": false,
+            "stances": ["Marching Mode"],
+            "details": ""
+        }, {
+            "name": "Fearsome Presence",
+            "image": "img/abilities/skill_00255.png",
+            "cooldown": 8,
+            "charges": 1,
+            "bind": "ability1",
+            "description": "After a 1-second wind-up, teleport to the enemy you last damaged with this ability or {{ABILITY:1}}, if they are nearby. The maximum distance of the teleport is increased by 10% for every Obsession Stack you have.\n\nIf you can't teleport, throw a Sticky Hell Bomb. If it hits an enemy, it sticks to them and explodes after 2 seconds, dealing 350 Damage.",
+            "hidden": false,
+            "stances": ["Normal Mode"],
+            "details": ""
+        }, {
+            "name": "Hunting Instinct",
+            "image": "img/abilities/skill_00476.png",
+            "cooldown": 9,
+            "charges": 1,
+            "bind": "ability2",
+            "description": "Leave a Rune on the position you are in, and enter Marching Mode for up to 6 seconds. Reactivating this ability or using {{ABILITY:7}} will cancel this ability without teleporting anywhere. The ability cannot be canceled while swinging.",
+            "hidden": false,
+            "stances": ["Normal Mode", "Marching Mode"],
+            "details": ""
+        }, {
+            "name": "Bloodbath Pirouette",
+            "image": "img/abilities/skill_00253.png",
+            "cooldown": 0,
+            "charges": 1,
+            "bind": "ultimate",
+            "description": "If you have an Obsession Target, start spinning with your Scythe out at a rapid speed, dealing 200 Damage every 0.2 seconds 3 times. \n\nIf all 3 shots did damage to your Obsession Target, hit them from below with your Scythe, dealing 500 Damage and sending them flying 100 units into the air.\n\n\tIf they are Immovable or otherwise could not have been lifted, that slice will deal an additional 500 Damage instead.\n\n\tIf they hit a ceiling (other than the skybox) before reaching that height, they get Stunned for 1.5 seconds and come crashing down to you.\n\n\tOtherwise, jump up to them and hit them from above for 600 initial Damage and another 400 Damage dealt as Bleed damage over 2 seconds, sending them crashing down onto the ground, then go down towards them.\n\nOtherwise, charge forward, dealing 300 Damage and dragging the first enemy player you come in contact with with you 60 units, being Invulnerable and Immovable while you do so.\n\nThe timer for how long a player is your target is paused during this ability's duration, regardless of circumstance.",
+            "hidden": false,
+            "stances": ["Normal Mode", "Marching Mode"],
+            "details": ""
+        }
+    ],
+    "talents": [{
+            "name": "Murder Machine",
+            "image": "img/abilities/skill_00476_grey.png",
+            "cooldown": 0,
+            "description": "{{ABILITY:6}} no longer has a cooldown, and you have 2 more Dashes during it, but you no longer place a rune at the start and cannot cast {{ABILITY:4}}, and the Dashes are replenished at a rate of one every 2.5 seconds.",
+            "details": "- No, reactivating the ability does not give you back your dashes.\n- No, using all of your dashes doesn't make you recall, either, nor will it cancel the ability."
+        }, {
+            "name": "Eliminate the Weak",
+            "image": "img/abilities/skill_00142_grey.png",
+            "cooldown": 0,
+            "description": "{{ABILITY:3}} deals up to 40% bonus damage to enemies under 2000 health, based on how low their health is.",
+            "details": ""
+        }, {
+            "name": "Anger Issues",
+            "image": "img/abilities/skill_00576_grey.png",
+            "cooldown": 0,
+            "description": "Your basic abilities charge 8% faster for every obsession stack you have.",
+            "details": ""
+        }, {
+            "name": "Kept In Check",
+            "image": "img/abilities/skill_00255_grey.png",
+            "cooldown": 0,
+            "description": "{{ABILITY:5}} has two charges, which have a simultaneous cooldown, but {{ABILITY:6}}'s cooldown is increased by 3 seconds.",
+            "details": ""
+        }
+    ],
+    "stances": ["Normal Mode", "Marching Mode"],
+    "card_categories": []
+}
